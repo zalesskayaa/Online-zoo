@@ -8,154 +8,259 @@
     <title>Online zoo</title>
 </head>
 
-<body bgcolor="F6F9FA">
-    <header>
-        <h1>Online zoo</h1>
-        <img src="Logo.png" alt="Logo of the online zoo">
-        <nav>
-            <ul>
-                <li>about</li>
-                <li>map</li>
-                <li>zoos</li>
-                <li>contact us</li>
-                <li>design</li>
+<body>
+    <style>
+        .header {
+            background-color: aquamarine;
+        }
+        .header__title {
+            font-size: small;
+        }
+        .header__logo {
+            width: 100px; height: 80px;
+        }
+       .header__item {
+        color: blue;
+       }
+       .header__item.header__item_active {
+        color: crimson;
+       }
+       .header .header__title {
+       }
+       .header>.header__title {
+       }
+       .header__item.header__item_active+.header__item {
+        color: chartreuse;
+       }
+       .header~.header__title {
+       }
+       .section__title {
+       }
+       .step {
+        display: block;
+       }
+       .section {
+        background-color: bisque;
+       }
+       .section__title {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+       .section__text {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: medium;
+       }
+       .section__click {
+        color: rgb(246, 0, 176);
+       }
+       .section__title.section__title__title {
+        font-size: x-large;
+       }
+       .section__image {
+        width: 100px; height: 100px;
+       }
+       .section__article {
+        background-color: cornsilk;
+       }
+       .section__tap {
+        background-color: rgb(231, 208, 0);
+       }
+       .section.header {
+        background-color: bisque;
+       }
+       .section__table {
+        background-color: rgb(224, 174, 98);
+        border: 3px;
+        border-color: black;
+       }
+       .section__line {
+        margin: 0px;
+       }
+       .section__string {
+        padding: 20px;
+       }
+       .section__font {
+        letter-spacing: 4px;
+       }
+       .section__step {
+        max-width: 100px; max-height: 60;
+       }
+       .section__comment {
+        background-color: khaki;
+       }
+       .section__border {
+        background-color: rgb(0, 135, 253);
+       }
+       .section__list {
+        list-style-type: square;
+       }
+       .section__scroll {
+        background-color: beige;
+       }
+       .section__letters {
+        letter-spacing: 10px;
+       }
+       .footer {
+        background-color: blanchedalmond;
+       }
+       .menu__item {
+        list-style: georgian;
+       }
+       .menu__item.menu__item_active {
+        color-scheme: red;
+       }
+       .footer__logo {
+            width: 100px; height: 80px;
+        }
+
+    </style>
+    <header class="header">
+        <h1 class="header__title">Online zoo</h1>
+        <img src="Logo.png" alt="Logo of the online zoo" class="header__logo">
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item menu__item_active">about</li>
+                <li class="menu__item">map</li>
+                <li class="menu__item">zoos</li>
+                <li class="menu__item">contact us</li>
+                <li class="menu__item">design</li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Watch your favorite animals online</h1>
-            <p>Observe different animals from around the world online in live time. Help <br> vulunteers to
+        <section class="section">
+            <h1 class="section__title">Watch your favorite animals online</h1>
+            <p class="section__text">Observe different animals from around the world online in live time. Help <br> vulunteers to
                 take a good care of animals, donate to your favorite ones.</p>
-            <button>Watch now</button>
+            <button class="section__click">Watch now</button>
         </section>
-        <section>
-            <h1>How it works</h1>
-            <article><img src="Glass.jpg" alt="Binoculas">
-                <p>Keep an eye on your favourite animals online</p>
+        <section class="section">
+            <h1 class="section__title section__title__title">How it works</h1>
+            <article class="section__article"><img src="Glass.jpg" alt="Binoculas" class="section__image">
+                <p class="section__text">Keep an eye on your favourite animals online</p>
             </article>
-            <article><img src="Heart.jpg" alt="Heart">
-                <p>Become a part of the communtity</p>
+            <article class="section__article"><img src="Heart.jpg" alt="Heart" class="section__image">
+                <p class="section__text">Become a part of the communtity</p>
             </article>
-            <article><img src="Hand&heart.jpg" alt="Hand with heart">
-                <p>Support animals with the donations</p>
+            <article class="section__article"><img src="Hand&heart.jpg" alt="Hand with heart" class="section__image">
+                <p class="section__text">Support animals with the donations</p>
             </article>
         </section>
-        <section>
-            <header>
-                <h1>Pets in zoo</h1>
-                <button>Choose your Favorite</button>
+        <section class="section">
+            <header class="section__header">
+                <h1 class="section__title">Pets in zoo</h1>
+                <button class="section__tap">Choose your Favorite</button>
             </header>
-            <table>
-                <tr>
-                    <td>
-                        <p style="border:3px #c4c4c4  solid;">
-                            <strong>Pandas</strong>.Shenshuping Gengda Panda Center
-                            <img src="Panda.png" alt="Panda">
+            <table class="section__table">
+                <tr class="section__line">
+                    <td class="section__string">
+                        <p class="section__text">
+                            <strong class="section__font">Pandas</strong>.Shenshuping Gengda Panda Center
+                            <img src="Panda.png" alt="Panda" class="section__image">
                         </p>
                     </td>
-                    <td>
-                        <p style="border:3px #c4c4c4  solid;">
-                            <strong>Eagles</strong>.Shenshuping Gengda Panda Center
-                            <img src="Bird.png" alt="Eagles">
+                    <td class="section__string">
+                        <p class="section__text">
+                            <strong class="section__font">Eagles</strong>.Shenshuping Gengda Panda Center
+                            <img src="Bird.png" alt="Eagles" class="section__image">
                         </p>
                     </td>
-                    <td>
-                        <p style="border:3px #c4c4c4  solid;">
-                            <strong>Gorillas</strong>.Shenshuping Gengda Panda Center
-                            <img src="Gorilla.png" alt="Gorillas">
+                    <td class="section__string">
+                        <p class="section__text">
+                            <strong class="section__font">Gorillas</strong>.Shenshuping Gengda Panda Center
+                            <img src="Gorilla.png" alt="Gorillas" class="section__image">
                         </p>
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        <p style="border:3px #c4c4c4  solid;">
-                            <strong>Aligators</strong>.Shenshuping Gengda Panda Center
-                            <img src="Crocodile.png" alt="Crocodile">
+                <tr class="section__line">
+                    <td class="section__string">
+                        <p class="section__text">
+                            <strong class="section__font">Aligators</strong>.Shenshuping Gengda Panda Center
+                            <img src="Crocodile.png" alt="Crocodile" class="section__image">
                         </p>
                     </td>
-                    <td>
-                        <p style="border:3px #c4c4c4  solid;">
-                            <strong>Elephants</strong>.Shenshuping Gengda Panda Center
-                            <img src="Elephant.png" alt="Elephant">
+                    <td class="section__string">
+                        <p class="section__text">
+                            <strong class="section__font">Elephants</strong>.Shenshuping Gengda Panda Center
+                            <img src="Elephant.png" alt="Elephant" class="section__image">
                         </p>
                     </td>
-                    <td>
-                        <p style="border:3px #c4c4c4  solid;">
-                            <strong>Pandas</strong>.Shenshuping Gengda Panda Center
-                            <img src="Panda.png" alt="Panda">
+                    <td class="section__string">
+                        <p class="section__text">
+                            <strong class="section__font">Pandas</strong>.Shenshuping Gengda Panda Center
+                            <img src="Panda.png" alt="Panda" class="section__image">
                         </p>
                     </td>
                 </tr>
             </table>
         </section>
-        <section>
-            <header>
-                <h1>Pay and feed</h1>
-                <button>Donate to volunteers</button>
+        <section class="section">
+            <header class="section__header">
+                <h1 class="section__title">Pay and feed</h1>
+                <button class="section__click">Donate to volunteers</button>
             </header>
-            <img src="Okey.png" alt="Hand with coin">
-            <img src="Arrow1.png" alt="Aroow">
-            <img src="Monckey.png" alt="Monckey">
-            <img src="Arrow2.png" alt="Arrow">
-            <img src="Hand&apple.png" alt="Hand with apple">
+            <img src="Okey.png" alt="Hand with coin" class="section__step">
+            <img src="Arrow1.png" alt="Aroow" class="section__step">
+            <img src="Monckey.png" alt="Monckey" class="section__step">
+            <img src="Arrow2.png" alt="Arrow" class="section__step">
+            <img src="Hand&apple.png" alt="Hand with apple" class="section__step">
         </section>
-        <section>
-            <h1>Testimonials</h1>
-            <article>
-                <p style="border:3px #c4c4c4  solid;">
+        <section class="section">
+            <h1 class="section__title">Testimonials</h1>
+            <article class="section__comment">
+                <p style="border:3px #c4c4c4  solid;" class="section__border">
                     Awesome place to observe my favourite aligators at Florida, the quality of the video is great.
                 </p>
-                <img src="Comment1.png" alt="Avatar">
+                <img src="Comment1.png" alt="Avatar" class="section__image">
             </article>
-            <article>
-                <p style="border:3px #c4c4c4  solid;">
+            <article class="section__comment">
+                <p style="border:3px #c4c4c4  solid;" class="section__border">
                     Awesome place to observe my favourite aligators at Florida, the quality of the video is great.
                 </p>
-                <img src="Comment2.png" alt="Avatar">
+                <img src="Comment2.png" alt="Avatar" class="section__image">
             </article>
-            <article>
-                <p style="border:3px #c4c4c4  solid;">
+            <article class="section__comment">
+                <p style="border:3px #c4c4c4  solid;" class="section__border">
                     Awesome place to observe my favourite aligators at Florida, the quality of the video is great.
                 </p>
-                <img src="Comment3.png" alt="Avatar">
+                <img src="Comment3.png" alt="Avatar" class="section__image">
             </article>
         </section>
-        <section>
-            <h1>Look at this beautiful animals</h1>
-            <ul>
-                <li><img src="Panda.png" alt="Panda">
-                    <p>Pandas</p>
+        <section class="section">
+            <h1 class="section__title">Look at this beautiful animals</h1>
+            <ul class="section__list">
+                <li class="section__scroll"><img src="Panda.png" alt="Panda" class="section__image">
+                    <p class="section__letters">Pandas</p>
                 </li>
-                <li><img src="Gorilla.png" alt="Gorilla">
-                    <p>Gorillas</p>
+                <li class="section__scroll"><img src="Gorilla.png" alt="Gorilla" class="section__image">
+                    <p class="section__letters">Gorillas</p>
                 </li>
-                <li><img src="Bird.png" alt="Bird">
-                    <p>Eagles</p>
+                <li class="section__scroll"><img src="Bird.png" alt="Bird" class="section__image">
+                    <p class="section__letters">Eagles</p>
                 </li>
-                <li><img src="Crocodile.png" alt="Crocodile">
-                    <p>Aligators</p>
+                <li class="section__scroll"><img src="Crocodile.png" alt="Crocodile" class="section__image">
+                    <p class="section__letters">Aligators</p>
                 </li>
-                <li><img src="Elephant.png" alt="Elephant">
-                    <p>Elephants</p>
+                <li class="section__scroll"><img src="Elephant.png" alt="Elephant" class="section__image">
+                    <p class="section__letters">Elephants</p>
                 </li>
-                <li><img src="Limurs.png" alt="Limurs">
-                    <p>Lemurs</p>
+                <li class="section__scroll"><img src="Limurs.png" alt="Limurs" class="section__image">
+                    <p class="section__letters">Lemurs</p>
                 </li>
             </ul>
         </section>
     </main>
-    <footer>
-        <img src="Logo.png" alt="Logo of the online zoo">
-        <nav>
-            <ul>
-                <li>about</li>
-                <li>map</li>
-                <li>zoos</li>
-                <li>contact us</li>
-                <li>design</li>
+    <footer class="footer">
+        <img src="Logo.png" alt="Logo of the online zoo" class="footer__logo">
+        <nav class="footer__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item menu__item_active">About</li>
+                <li class="menu__item">Map</li>
+                <li class="menu__item">Zoos</li>
+                <li class="menu__item">Contact us</li>
+                <li class="menu__item">Design</li>
             </ul>
         </nav>
     </footer>
 </body>
+
 </html>
