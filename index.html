@@ -52,7 +52,7 @@
        .section__click {
         color: rgb(246, 0, 176);
        }
-       .section__title.section__title__title {
+       .section__title.section__title_large {
         font-size: x-large;
        }
        .section__image {
@@ -92,6 +92,9 @@
        }
        .section__list {
         list-style-type: square;
+       }
+       .section__list:last-child {
+        color:rgb(43, 128, 226)
        }
        .section__scroll {
         background-color: beige;
@@ -134,14 +137,17 @@
             <button class="section__click">Watch now</button>
         </section>
         <section class="section">
-            <h1 class="section__title section__title__title">How it works</h1>
-            <article class="section__article"><img src="Glass.jpg" alt="Binoculas" class="section__image">
+            <h1 class="section__title section__title_large">How it works</h1>
+            <article class="section__article">
+                <img src="Glass.jpg" alt="Binoculas" class="section__image">
                 <p class="section__text">Keep an eye on your favourite animals online</p>
             </article>
-            <article class="section__article"><img src="Heart.jpg" alt="Heart" class="section__image">
+            <article class="section__article">
+                <img src="Heart.jpg" alt="Heart" class="section__image">
                 <p class="section__text">Become a part of the communtity</p>
             </article>
-            <article class="section__article"><img src="Hand&heart.jpg" alt="Hand with heart" class="section__image">
+            <article class="section__article">
+                <img src="Hand&heart.jpg" alt="Hand with heart" class="section__image">
                 <p class="section__text">Support animals with the donations</p>
             </article>
         </section>
