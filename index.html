@@ -10,129 +10,192 @@
 
 <body>
     <style>
-        .header {
-            background-color: aquamarine;
-        }
-        .header__title {
-            font-size: small;
-        }
-        .header__logo {
-            width: 100px; height: 80px;
-        }
-       .header__item {
-        color: blue;
-       }
-       .header__item.header__item_active {
-        color: crimson;
-       }
-       .header .header__title {
-       }
-       .header>.header__title {
-       }
-       .header__item.header__item_active+.header__item {
-        color: chartreuse;
-       }
-       .header~.header__title {
-       }
-       .section__title {
-       }
-       .step {
-        display: block;
-       }
-       .section {
-        background-color: bisque;
-       }
-       .section__title {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       }
-       .section__text {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: medium;
-       }
-       .section__click {
-        color: rgb(246, 0, 176);
-       }
-       .section__title.section__title_large {
-        font-size: x-large;
-       }
-       .section__image {
-        width: 100px; height: 100px;
-       }
-       .section__article {
-        background-color: cornsilk;
-       }
-       .section__tap {
-        background-color: rgb(231, 208, 0);
-       }
-       .section.header {
-        background-color: bisque;
-       }
-       .section__table {
-        background-color: rgb(224, 174, 98);
-        border: 3px;
-        border-color: black;
-       }
-       .section__line {
-        margin: 0px;
-       }
-       .section__string {
-        padding: 20px;
-       }
-       .section__font {
-        letter-spacing: 4px;
-       }
-       .section__step {
-        max-width: 100px; max-height: 60;
-       }
-       .section__comment {
-        background-color: khaki;
-       }
-       .section__border {
-        background-color: rgb(0, 135, 253);
-       }
-       .section__list {
-        list-style-type: square;
-       }
-       .section__list:last-child {
-        color:rgb(43, 128, 226)
-       }
-       .section__scroll {
-        background-color: beige;
-       }
-       .section__letters {
-        letter-spacing: 10px;
-       }
-       .footer {
-        background-color: blanchedalmond;
-       }
-       .menu__item {
-        list-style: georgian;
-       }
-       .menu__item.menu__item_active {
-        color-scheme: red;
-       }
-       .footer__logo {
-            width: 100px; height: 80px;
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
         }
 
+        .wrapper {
+            max-width: 1600px;
+            width: 100%;
+            margin: 0px auto;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header {
+            background-color: #216E7A;
+        }
+
+        .header__title {
+            font-size: small;
+            display: none;
+        }
+
+        .header__logo {
+            width: 100px;
+            height: 80px;
+        }
+
+        .menu__list {
+            color: white;
+            display: flex;
+        }
+
+        .header__item {
+            color: blue;
+        }
+
+        .header__item.header__item_active {
+            color: crimson;
+        }
+
+        .header .header__title {}
+
+        .header>.header__title {}
+
+        .header__item.header__item_active+.header__item {
+            color: chartreuse;
+        }
+
+        .header~.header__title {}
+
+        .section__title {}
+
+        .step {
+            display: block;
+        }
+
+        .section {
+            background-color: bisque;
+        }
+
+        .section__title {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .section__text {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+
+        .section__click {
+            color: rgb(246, 0, 176);
+        }
+
+        .section__title.section__title_large {
+            font-size: x-large;
+        }
+
+        .section__image {
+            width: 100px;
+            height: 100px;
+        }
+
+        .section__article {
+            background-color: cornsilk;
+        }
+
+        .section__tap {
+            background-color: rgb(231, 208, 0);
+        }
+
+        .section.header {
+            background-color: bisque;
+        }
+
+        .section__table {
+            background-color: rgb(224, 174, 98);
+            border: 3px;
+            border-color: black;
+        }
+
+        .section__line {
+            margin: 0px;
+        }
+
+        .section__string {
+            padding: 20px;
+        }
+
+        .section__font {
+            letter-spacing: 4px;
+        }
+
+        .section__step {
+            max-width: 100px;
+            max-height: 60;
+        }
+
+        .section__comment {
+            background-color: khaki;
+        }
+
+        .section__border {
+            background-color: rgb(0, 135, 253);
+        }
+
+        .section__list {
+            list-style-type: square;
+        }
+
+        .section__list:last-child {
+            color: rgb(43, 128, 226)
+        }
+
+        .section__scroll {
+            background-color: beige;
+        }
+
+        .section__letters {
+            letter-spacing: 10px;
+        }
+
+        .footer {
+            background-color: blanchedalmond;
+        }
+
+        .menu__item {
+            list-style: none;
+        }
+
+        .menu__item.menu__item_active {
+            color-scheme: red;
+        }
+
+        .footer__logo {
+            width: 100px;
+            height: 80px;
+        }
     </style>
     <header class="header">
-        <h1 class="header__title">Online zoo</h1>
-        <img src="Logo.png" alt="Logo of the online zoo" class="header__logo">
-        <nav class="header__menu menu">
-            <ul class="menu__list">
-                <li class="menu__item menu__item_active">about</li>
-                <li class="menu__item">map</li>
-                <li class="menu__item">zoos</li>
-                <li class="menu__item">contact us</li>
-                <li class="menu__item">design</li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <h1 class="header__title">Online zoo</h1>
+            <img src="Logo.png" alt="Logo of the online zoo" class="header__logo">
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item menu__item_active">about</li>
+                    <li class="menu__item">map</li>
+                    <li class="menu__item">zoos</li>
+                    <li class="menu__item">contact us</li>
+                    <li class="menu__item">design</li>
+                </ul>
+            </nav>
+            <aside>
+                <img src="" alt="search">
+                <button>Log in</button>
+                <button>Sign up</button>
+            </aside>
+        </div>
     </header>
     <main>
         <section class="section">
             <h1 class="section__title">Watch your favorite animals online</h1>
-            <p class="section__text">Observe different animals from around the world online in live time. Help <br> vulunteers to
+            <p class="section__text">Observe different animals from around the world online in live time. Help <br>
+                vulunteers to
                 take a good care of animals, donate to your favorite ones.</p>
             <button class="section__click">Watch now</button>
         </section>
@@ -213,19 +276,19 @@
         <section class="section">
             <h1 class="section__title">Testimonials</h1>
             <article class="section__comment">
-                <p style="border:3px #c4c4c4  solid;" class="section__border">
+                <p class="section__border">
                     Awesome place to observe my favourite aligators at Florida, the quality of the video is great.
                 </p>
                 <img src="Comment1.png" alt="Avatar" class="section__image">
             </article>
             <article class="section__comment">
-                <p style="border:3px #c4c4c4  solid;" class="section__border">
+                <p class="section__border">
                     Awesome place to observe my favourite aligators at Florida, the quality of the video is great.
                 </p>
                 <img src="Comment2.png" alt="Avatar" class="section__image">
             </article>
             <article class="section__comment">
-                <p style="border:3px #c4c4c4  solid;" class="section__border">
+                <p class="section__border">
                     Awesome place to observe my favourite aligators at Florida, the quality of the video is great.
                 </p>
                 <img src="Comment3.png" alt="Avatar" class="section__image">
@@ -268,5 +331,6 @@
         </nav>
     </footer>
 </body>
+
 
 </html>
