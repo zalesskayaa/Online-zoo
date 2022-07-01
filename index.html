@@ -15,7 +15,7 @@
             margin: 0px;
             padding: 0px;
         }
-
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
         .wrapper {
             max-width: 1600px;
             width: 100%;
@@ -43,22 +43,20 @@
         .menu__list {
             color: white;
             display: flex;
+            justify-content: space-between;
+            width: 400px;
         }
 
         .header__item {
-            color: blue;
+            color: #216E7A;
         }
 
         .header__item.header__item_active {
-            color: crimson;
+            color: #216E7A;
         }
 
-        .header .header__title {}
-
-        .header>.header__title {}
-
         .header__item.header__item_active+.header__item {
-            color: chartreuse;
+            color: #F6F9FA;
         }
 
         .header~.header__title {}
@@ -69,25 +67,40 @@
             display: block;
         }
 
+        .wrapper {
+            max-width: 1600px;
+            width: 100%;
+            margin: 0px auto;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
         .section {
-            background-color: bisque;
+            background-color: #216E7A;
+            display: flex;
         }
 
         .section__title {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
         }
 
         .section__text {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: "Rubik";
             font-size: medium;
+            color: white;
         }
 
         .section__click {
-            color: rgb(246, 0, 176);
+            color: #216E7A;
         }
 
         .section__title.section__title_large {
             font-size: x-large;
+            background-color: #F6F9FA;
+            color: #216E7A;
         }
 
         .section__image {
@@ -96,19 +109,29 @@
         }
 
         .section__article {
-            background-color: cornsilk;
+            background-color: #F6F9FA;
+        }
+
+        .section__text.section__text_item {
+            color: #216E7A;
+            font-size: 0.5em;
         }
 
         .section__tap {
-            background-color: rgb(231, 208, 0);
+            border-color: #216E7A;
+            background-color: white;
         }
 
-        .section.header {
-            background-color: bisque;
+        .section__header {
+            background-color: #F6F9FA;
+        }
+
+        .section__title.section__title_text {
+            color: #216E7A;
         }
 
         .section__table {
-            background-color: rgb(224, 174, 98);
+            background-color: #F6F9FA;
             border: 3px;
             border-color: black;
         }
@@ -131,23 +154,24 @@
         }
 
         .section__comment {
-            background-color: khaki;
+            background-color: #216E7A;
         }
 
         .section__border {
-            background-color: rgb(0, 135, 253);
+            background-color: #216E7A;
         }
 
         .section__list {
-            list-style-type: square;
+            list-style-type: none;
+            display: flex;
         }
 
         .section__list:last-child {
-            color: rgb(43, 128, 226)
+            color: #F6F9FA;
         }
 
         .section__scroll {
-            background-color: beige;
+            background-color: #216E7A;
         }
 
         .section__letters {
@@ -155,7 +179,7 @@
         }
 
         .footer {
-            background-color: blanchedalmond;
+            background-color: #216E7A;
         }
 
         .menu__item {
@@ -163,13 +187,14 @@
         }
 
         .menu__item.menu__item_active {
-            color-scheme: red;
+            color-scheme: 216E7A;
         }
 
         .footer__logo {
             width: 100px;
             height: 80px;
         }
+        
     </style>
     <header class="header">
         <div class="wrapper">
@@ -177,7 +202,7 @@
             <img src="Logo.png" alt="Logo of the online zoo" class="header__logo">
             <nav class="header__menu menu">
                 <ul class="menu__list">
-                    <li class="menu__item menu__item_active">about</li>
+                    <li class="menu__item">about</li>
                     <li class="menu__item">map</li>
                     <li class="menu__item">zoos</li>
                     <li class="menu__item">contact us</li>
@@ -193,30 +218,36 @@
     </header>
     <main>
         <section class="section">
+            <div class="wrapper">
             <h1 class="section__title">Watch your favorite animals online</h1>
             <p class="section__text">Observe different animals from around the world online in live time. Help <br>
                 vulunteers to
                 take a good care of animals, donate to your favorite ones.</p>
             <button class="section__click">Watch now</button>
+        </div>
         </section>
+            <section class="section">
+                <div class="wrapper">
+                <h1 class="section__title section__title_large">How it works</h1>
+                <article class="section__article">
+                    <img src="Glass.jpg" alt="Binoculas" class="section__image">
+                    <p class="section__text.section__text_item">Keep an eye on your favourite animals online</p>
+                </article>
+                <article class="section__article">
+                    <img src="Heart.jpg" alt="Heart" class="section__image">
+                    <p class="section__text.section__text_item">Become a part of the communtity</p>
+                </article>
+                <article class="section__article">
+                    <img src="Hand&heart.jpg" alt="Hand with heart" class="section__image">
+                    <p class="section__text.section__text_item">Support animals with the donations</p>
+                </article>
+            </div>
+            </section>
+            
         <section class="section">
-            <h1 class="section__title section__title_large">How it works</h1>
-            <article class="section__article">
-                <img src="Glass.jpg" alt="Binoculas" class="section__image">
-                <p class="section__text">Keep an eye on your favourite animals online</p>
-            </article>
-            <article class="section__article">
-                <img src="Heart.jpg" alt="Heart" class="section__image">
-                <p class="section__text">Become a part of the communtity</p>
-            </article>
-            <article class="section__article">
-                <img src="Hand&heart.jpg" alt="Hand with heart" class="section__image">
-                <p class="section__text">Support animals with the donations</p>
-            </article>
-        </section>
-        <section class="section">
+            <div class="wrapper">
             <header class="section__header">
-                <h1 class="section__title">Pets in zoo</h1>
+                <h1 class="section__title.section__title_text">Pets in zoo</h1>
                 <button class="section__tap">Choose your Favorite</button>
             </header>
             <table class="section__table">
@@ -261,6 +292,7 @@
                     </td>
                 </tr>
             </table>
+        </div>
         </section>
         <section class="section">
             <header class="section__header">
@@ -318,17 +350,19 @@
             </ul>
         </section>
     </main>
-    <footer class="footer">
-        <img src="Logo.png" alt="Logo of the online zoo" class="footer__logo">
-        <nav class="footer__menu menu">
-            <ul class="menu__list">
-                <li class="menu__item menu__item_active">About</li>
-                <li class="menu__item">Map</li>
-                <li class="menu__item">Zoos</li>
-                <li class="menu__item">Contact us</li>
-                <li class="menu__item">Design</li>
-            </ul>
-        </nav>
+    <div class="wrapper">
+        <footer class="footer">
+            <img src="Logo.png" alt="Logo of the online zoo" class="footer__logo">
+            <nav class="footer__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item menu__item_active">About</li>
+                    <li class="menu__item">Map</li>
+                    <li class="menu__item">Zoos</li>
+                    <li class="menu__item">Contact us</li>
+                    <li class="menu__item">Design</li>
+                </ul>
+            </nav>
+    </div>
     </footer>
 </body>
 
