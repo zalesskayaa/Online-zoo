@@ -145,9 +145,25 @@
             border-color: white;
         }
 
+        .section__clicks {
+            color: white;
+            box-sizing: border-box;
+            border-radius: 35%;
+            width: 70%;
+            height: 40%;
+            background-color: #C5E1E5;
+            border-color: white;
+            margin-inline: 5px;
+            padding: 3px 15px;
+        }
+
         .section__title.section__title_large {
-            background-color: #F6F9FA;
             color: #216E7A;
+            font-size: 1.5em;
+            padding: 20px;
+        }
+        .section__title.section__title_largee {
+            color: white;
             font-size: 1.5em;
         }
 
@@ -178,6 +194,15 @@
             border-radius: 50%;
             padding: 15px 30px;
         }
+        .section__taps {
+            background-color: white;
+            color: #216E7A;
+            border-color: #216E7A;
+            padding: 10px 0px;
+            border-radius: 90%;
+            width: 15%;
+            height: 60%;
+        }
 
         .section__picture {
             height: 15px;
@@ -192,7 +217,7 @@
         }
 
         .section__header {
-            background-color: #F6F9FA;
+            margin: 20px;
         }
 
         .section__title.section__title_text {
@@ -227,11 +252,14 @@
         }
 
         .section__comment {
+            padding: 10px;
             background-color: #F6F9FA;
+            box-shadow: rgba(100, 100, 111, 0.386) 0px 7px 29px 0px;
+            margin: 30px;
         }
 
         .section__border {
-            
+
             background-color: #F6F9FA;
         }
 
@@ -275,7 +303,8 @@
         .section__titletxt {
             color: #216E7A;
             padding: 10px 30px 100px;
-            font-size: 1.1em;
+            font-size: 1.4em;
+            font-weight: lighter;
         }
 
         .section.pay-and-feed {
@@ -299,8 +328,14 @@
             justify-content: space-between;
             gap: 20px;
         }
+
         .section__compic {
             width: 10%;
+        }
+
+        .section__letter {
+            color: rgb(161, 161, 161);
+            font-size: 0.7em;
         }
 
         .footer {
@@ -309,6 +344,13 @@
 
         .menu__item {
             list-style: none;
+        }
+
+        .header__letter {
+            font-variant: small-caps;
+            text-align: right;
+            font-size: 0.8em;
+            color: white;
         }
 
         .footer__logo {
@@ -339,7 +381,7 @@
         </div>
     </header>
     <main>
-        <section class="section">
+        <section class="section animals-online">
             <div class="wrapper">
                 <div class="section__txt">
                     <h1 class="section__title">Watch your favorite <br>animals online</h1>
@@ -389,7 +431,9 @@
                             <hr>
                             <div>
                                 <p class="section__letters">
-                                    <strong class="section__font">Pandas</strong>.<br> Shenshuping Gengda Panda Center
+                                    <strong class="section__font">Pandas</strong>
+                                </p>
+                                <p class="section__letter">Shenshuping Gengda Panda Center
                                 </p>
                                 <img src="tv.png" alt="svg" class="section__svg">
                             </div>
@@ -398,7 +442,9 @@
                             <img src="Bird.png" alt="Eagles" class="section__pic">
                             <hr>
                             <p class="section__letters">
-                                <strong class="section__font">Eagles</strong>.<br>Shenshuping Gengda Panda Center
+                                <strong class="section__font">Eagles</strong>
+                            </p>
+                            <p class="section__letter">Shenshuping Gengda Panda Center
                             </p>
                             <img src="tv.png" alt="svg" class="section__svg">
                         </td>
@@ -406,7 +452,9 @@
                             <img src="Gorilla.png" alt="Gorillas" class="section__pic">
                             <hr>
                             <p class="section__letters">
-                                <strong class="section__font">Gorillas</strong>.<br>Shenshuping Gengda Panda Center
+                                <strong class="section__font">Gorillas</strong>
+                            </p>
+                            <p class="section__letter">Shenshuping Gengda Panda Center
                             </p>
                             <img src="tv.png" alt="svg" class="section__svg">
                         </td>
@@ -416,7 +464,9 @@
                             <img src="Crocodile.png" alt="Crocodile" class="section__pic">
                             <hr>
                             <p class="section__letters">
-                                <strong class="section__font">Aligators</strong>.<br>Shenshuping Gengda Panda Center
+                                <strong class="section__font">Aligators</strong>
+                            </p>
+                            <p class="section__letter">Shenshuping Gengda Panda Center
                             </p>
                             <img src="tv.png" alt="svg" class="section__svg">
                         </td>
@@ -424,7 +474,9 @@
                             <img src="Elephant.png" alt="Elephant" class="section__pic">
                             <hr>
                             <p class="section__letters">
-                                <strong class="section__font">Elephants</strong>.<br>Shenshuping Gengda Panda Center
+                                <strong class="section__font">Elephants</strong>
+                            </p>
+                            <p class="section__letter">Shenshuping Gengda Panda Center
                             </p>
                             <img src="tv.png" alt="svg" class="section__svg">
                         </td>
@@ -432,7 +484,9 @@
                             <img src="Panda.png" alt="Panda" class="section__pic">
                             <hr>
                             <p class="section__letters">
-                                <strong class="section__font">Pandas</strong>.<br>Shenshuping Gengda Panda Center
+                                <strong class="section__font">Pandas</strong>
+                            </p>
+                            <p class="section__letter">Shenshuping Gengda Panda Center
                             </p>
                             <img src="tv.png" alt="svg" class="section__svg">
                         </td>
@@ -442,9 +496,9 @@
         </section>
         <section class="section pay-and-feed">
             <header class="section__header">
-                <div class="wrapper-rap">
-                    <h1 class="section__title section__title_large">Pay and feed</h1>
-                    <button class="section__click">Donate to volunteers</button>
+                <div class="wrapper">
+                    <h1 class="section__title section__title_largee">Pay and feed</h1>
+                    <button class="section__clicks">Donate to volunteers</button>
                 </div>
             </header>
             <div class="wrapper">
@@ -457,20 +511,24 @@
         </section>
         <section class="section testimonials">
             <h1 class="section__title section__title_large">Testimonials</h1>
-            <article class="section__comment">
-                <p class="section__border">
+            <button class="section__taps"> <img src="message.png" alt="heart" class="section__picture"> Leave feedback</button>
+            <article class="section__border">
+                <p class="section__comment">
+                    20 December 2020<br>
                     Awesome place to observe my favourite aligators at Florida, the quality of the video is great.
                 </p>
                 <img src="Comment1.png" alt="Avatar" class="section__compic">
             </article>
-            <article class="section__comment">
-                <p class="section__border">
+            <article class="section__border">
+                <p class="section__comment">
+                    20 December 2020<br>
                     Awesome place to observe my favourite aligators at Florida, the quality of the video is great.
                 </p>
                 <img src="Comment2.png" alt="Avatar" class="section__compic">
             </article>
-            <article class="section__comment">
-                <p class="section__border">
+            <article class="section__border">
+                <p class="section__comment">
+                    20 December 2020<br>
                     Awesome place to observe my favourite aligators at Florida, the quality of the video is great.
                 </p>
                 <img src="Comment3.png" alt="Avatar" class="section__compic">
@@ -502,19 +560,27 @@
             </div>
         </section>
     </main>
-    <div class="wrapper">
-        <footer class="footer">
-            <img src="Logo.png" alt="Logo of the online zoo" class="footer__logo">
-            <nav class="footer__menu menu">
-                <ul class="menu__list">
-                    <li class="menu__item">ABOUT</li>
-                    <li class="menu__item">MAP</li>
-                    <li class="menu__item">ZOOS</li>
-                    <li class="menu__item">CONTACT US</li>
-                    <li class="menu__item">DESIGN</li>
-                </ul>
-            </nav>
-    </div>
+    <footer class="footer">
+        <header class="header">
+            <div class="wrapper">
+                <h1 class="header__title">Online zoo</h1>
+                <img src="Logo.png" alt="Logo of the online zoo" class="header__logo">
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">ABOUT</li>
+                        <li class="menu__item">MAP</li>
+                        <li class="menu__item">ZOOS</li>
+                        <li class="menu__item">CONTACT US</li>
+                        <li class="menu__item">DESIGN</li>
+                    </ul>
+                </nav>
+                <aside>
+                    <div class="wrapper">
+                        <p class="header__letter">Design by Lemeshko Kateryna<br>
+                            ©RSSchool and ©Yem Digital 2021</p>
+                    </div>
+                </aside>
+            </div>
     </footer>
 </body>
 
