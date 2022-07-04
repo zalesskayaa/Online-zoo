@@ -6,363 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap">
+    <link rel="stylesheet" href="style.css">
     <title>Online zoo</title>
 </head>
 
 <body>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        html {
-            font-size: 14px;
-        }
-
-        .wrapper {
-            max-width: 1600px;
-            width: 100%;
-            margin: 0px auto;
-            display: flex;
-            padding: 10px;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .section.how-it-works .wrapper,
-        .section.pets-in-zoo .wrapper {
-            flex-direction: column;
-            background-color: #F6F9FA;
-        }
-
-        .header {
-            background-color: #216E7A;
-        }
-
-        .header__title {
-            display: none;
-        }
-
-        .header__logo {
-            width: 80px;
-            height: 60px;
-        }
-
-        .header__click {
-            color: white;
-            box-sizing: border-box;
-            border-radius: 35%;
-            width: 70%;
-            height: 40%;
-            background-color: #216E7A;
-            border-color: white;
-            margin-inline: 5px;
-            padding: 3px 15px;
-        }
-
-        .menu__list {
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            justify-content: center;
-            gap: 20px;
-            font-size: 0.8em;
-        }
-
-        .section__article-container {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-        }
-
-        .header__menu.menu {
-            flex: 1
-        }
-
-        .header__item {
-            color: #216E7A;
-        }
-
-        .header__item.header__item_active {
-            color: #216E7A;
-        }
-
-        .header__item.header__item_active+.header__item {
-            color: #F6F9FA;
-        }
-
-        .header__svg {
-            width: 20px;
-            height: 20px;
-        }
-
-        .header~.header__title {}
-
-        .section__title {
-            font-size: 3.5em;
-            margin-bottom: 27px;
-            color: rgb(255, 255, 255);
-            font-weight: lighter;
-        }
-
-        .step {
-            display: block;
-        }
-
-        .wrapper {
-            max-width: 1600px;
-            width: 100%;
-            margin: 0px auto;
-            display: flex;
-            padding: 10px;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .section {
-            background-color: #216E7A;
-            display: flex;
-        }
-
-        .section__text {
-            color: black;
-            margin-bottom: 50px;
-            font-size: 1.2em;
-            font-weight: lighter;
-        }
-
-        .section__click {
-            background-color: white;
-            color: #216E7A;
-            padding: 7px 20px;
-            border-radius: 12px;
-            width: 35%;
-            height: 40%;
-            border-color: white;
-        }
-
-        .section__clicks {
-            color: white;
-            box-sizing: border-box;
-            border-radius: 35%;
-            width: 70%;
-            height: 40%;
-            background-color: #C5E1E5;
-            border-color: white;
-            margin-inline: 5px;
-            padding: 3px 15px;
-        }
-
-        .section__title.section__title_large {
-            color: #216E7A;
-            font-size: 1.5em;
-            padding: 20px;
-        }
-
-        .section__title.section__title_largee {
-            color: white;
-            font-size: 1.5em;
-        }
-
-        .section__image {
-            width: 150px;
-            height: 150px;
-        }
-
-        .section__article {
-            background-color: #F6F9FA;
-        }
-
-        .section__text.section__text_item {
-            color: #216E7A;
-            font-size: 3.5em;
-        }
-
-        .section__img {
-            width: 25%;
-            margin-right: 100px;
-        }
-
-        .section__tap {
-            border-color: #216E7A;
-            background-color: #F6F9FA;
-            color: #216E7A;
-            border-radius: 50%;
-            padding: 15px 30px;
-        }
-
-        .section__taps {
-            background-color: white;
-            color: #216E7A;
-            border-color: #216E7A;
-            padding: 10px 0px;
-            border-radius: 90%;
-            width: 15%;
-            height: 60%;
-        }
-
-        .section__picture {
-            height: 15px;
-        }
-
-        .section__txt {
-            margin-left: 100px;
-        }
-
-        .section__imagee {
-            width: 30%;
-        }
-
-        .section__header {
-            margin: 20px;
-        }
-
-        .section__title.section__title_text {
-            color: #216E7A;
-        }
-
-        .section__table {
-            background-color: #F6F9FA;
-            border: 3px;
-            border-color: black;
-        }
-
-        .section__textxt {
-            color: white;
-            margin-bottom: 50px;
-            font-size: 1.2em;
-            font-weight: lighter;
-        }
-
-        .section__line {
-            margin: 0px;
-        }
-
-        .section__string {
-            padding: 20px;
-            box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
-        }
-
-        .section__step {
-            max-width: 100px;
-            max-height: 60;
-        }
-
-        .section__comment {
-            padding: 10px;
-            background-color: #F6F9FA;
-            box-shadow: rgba(100, 100, 111, 0.386) 0px 7px 29px 0px;
-            margin: 30px;
-        }
-
-        .section__border {
-
-            background-color: #F6F9FA;
-        }
-
-        .section__ptxt {
-            font-size: 0.7em;
-            color: #216E7A;
-        }
-
-        .section__list {
-            list-style-type: none;
-            display: flex;
-            padding: 45px;
-        }
-
-        .section__pic {
-            width: 158px;
-            height: auto;
-        }
-
-        .section__letters {
-            size: 0.2em;
-            color: black;
-        }
-
-        .section__list:last-child {
-            color: #F6F9FA;
-        }
-
-        .section__scroll {}
-
-        .section__font {
-            font-size: 0.9em;
-        }
-
-        .section__svg {
-            width: 15px;
-            height: 15px;
-            margin-left: 200px;
-        }
-
-        .section__titletxt {
-            color: #216E7A;
-            padding: 10px 30px 100px;
-            font-size: 1.4em;
-            font-weight: lighter;
-        }
-
-        .section.pay-and-feed {
-            background-color: #216E7A;
-        }
-
-        .section.beautiful-animals {
-            background-color: #F6F9FA;
-        }
-
-        .section.testimonials {
-            background-color: #F6F9FA;
-        }
-
-        .wrapper-rap {
-            max-width: 1600px;
-            width: 100%;
-            margin: 0px auto;
-            display: flex;
-            padding: auto;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .section__compic {
-            width: 10%;
-        }
-
-        .section__letter {
-            color: rgb(161, 161, 161);
-            font-size: 0.7em;
-        }
-
-        .footer {
-            background-color: #216E7A;
-        }
-
-        .menu__item {
-            list-style: none;
-        }
-
-        .header__letter {
-            font-variant: small-caps;
-            text-align: right;
-            font-size: 0.8em;
-            color: white;
-        }
-
-        .footer__logo {
-            width: 80px;
-            height: 60px;
-        }
-    </style>
     <header class="header">
         <div class="wrapper">
             <h1 class="header__title">Online zoo</h1>
-            <img src="Logo.png" alt="Logo of the online zoo" class="header__logo">
+            <img src="./assets/images/Logo.png" alt="Logo of the online zoo" class="header__logo">
             <nav class="header__menu menu">
                 <ul class="menu__list">
                     <li class="menu__item">ABOUT</li>
@@ -374,9 +26,9 @@
             </nav>
             <aside>
                 <div class="wrapper">
-                    <img src="search.png" alt="search" class="header__svg">
-                    <button class="header__click">Log in</button>
-                    <button class="header__click">Sign up</button>
+                    <img src="./assets/images/search.png" alt="search" class="header__svg">
+                    <button class="header__clicker">LOG IN</button>
+                    <button class="header__click">SIGN UP</button>
                 </div>
             </aside>
         </div>
@@ -385,180 +37,212 @@
         <section class="section animals-online">
             <div class="wrapper">
                 <div class="section__txt">
-                    <h1 class="section__title">Watch your favorite <br>animals online</h1>
+                    <h1 class="section__title">Watch your favorite <br><span class="section__bold">animals online</span></h1>
                     <p class="section__textxt">Observe different animals from around the world online in live time. Help
                         <br>
                         vulunteers to
                         take a good care of animals, donate to your favorite ones.
                     </p>
-                    <button class="section__click">Watch now</button>
+                    <button class="section__click">WATCH NOW</button>
                 </div>
-                <img src="Panda3.png" alt="panda" class="section__img">
+                <img src="./assets/images/Panda3.png" alt="panda" class="section__img">
             </div>
         </section>
         <section class="section how-it-works">
             <div class="wrapper">
-                <h1 class="section__title section__title_large">How it works</h1>
+                <h1 class="section__title section__title_large">HOW IT WORKS</h1>
                 <div class="section__article-container">
                     <article class="section__article">
-                        <img src="Glass.jpg" alt="Binoculas" class="section__image">
+                        <img src="./assets/images/Glass.jpg" alt="Binoculas" class="section__image">
                         <p class="section__ptxt">Keep an eye on your favourite animals online</p>
                     </article>
                     <article class="section__article">
-                        <img src="Heart.jpg" alt="Heart" class="section__image">
+                        <img src="./assets/images/Heart.jpg" alt="Heart" class="section__image">
                         <p class="section__ptxt">Become a part of the communtity</p>
                     </article>
                     <article class="section__article">
-                        <img src="Hand&heart.jpg" alt="Hand with heart" class="section__image">
+                        <img src="./assets/images/Hand&heart.jpg" alt="Hand with heart" class="section__image">
                         <p class="section__ptxt">Support animals with the donations</p>
                     </article>
                 </div>
             </div>
         </section>
-        <div>
-            <img src="Illustrations.png" alt="pattern" class="div__image">
+        <div class="panda-img">
         </div>
         <section class="section pets-in-zoo">
             <div class="wrapper">
                 <header class="section__header">
-                    <h1 class="section__title section__title_large">Pets in zoo</h1>
-                    <button class="section__tap"> <img src="heart.png" alt="heart" class="section__picture"> Choose your
-                        Favorite</button>
+                    <h1 class="section__title section__title_large">PETS IN ZOO</h1>
+                    <button class="section__tap"> 
+                        <img src="./assets/images/heart.png" alt="heart" class="section__picture"> CHOOSE YOUR FAVORITE
+                    </button>
                 </header>
                 <table class="section__table" cellspacing="20">
                     <tr class="section__line">
                         <td class="section__string">
-                            <img src="Panda.png" alt="Panda" class="section__pic">
-                            <hr>
+                            <img src="./assets/images/Panda.png" alt="Panda" class="section__pic">
+                            <hr color="#E5EAEB">
                             <div>
                                 <p class="section__letters">
                                     <strong class="section__font">Pandas</strong>
                                 </p>
                                 <p class="section__letter">Shenshuping Gengda Panda Center
                                 </p>
-                                <img src="tv.png" alt="svg" class="section__svg">
+                                <img src="./assets/images/tv.png" alt="svg" class="section__svg">
                             </div>
                         </td>
                         <td class="section__string">
-                            <img src="Bird.png" alt="Eagles" class="section__pic">
-                            <hr>
+                            <img src="./assets/images/Bird.png" alt="Eagles" class="section__pic">
+                            <hr color="#E5EAEB">
                             <p class="section__letters">
                                 <strong class="section__font">Eagles</strong>
                             </p>
                             <p class="section__letter">Shenshuping Gengda Panda Center
                             </p>
-                            <img src="tv.png" alt="svg" class="section__svg">
+                            <img src="./assets/images/tv.png" alt="svg" class="section__svg">
                         </td>
                         <td class="section__string">
-                            <img src="Gorilla.png" alt="Gorillas" class="section__pic">
-                            <hr>
+                            <img src="./assets/images/Gorilla.png" alt="Gorillas" class="section__pic">
+                            <hr color="#E5EAEB">
                             <p class="section__letters">
                                 <strong class="section__font">Gorillas</strong>
                             </p>
                             <p class="section__letter">Shenshuping Gengda Panda Center
                             </p>
-                            <img src="tv.png" alt="svg" class="section__svg">
+                            <img src="./assets/images/tv.png" alt="svg" class="section__svg">
                         </td>
                     </tr>
                     <tr class="section__line">
                         <td class="section__string">
-                            <img src="Crocodile.png" alt="Crocodile" class="section__pic">
-                            <hr>
+                            <img src="./assets/images/Crocodile.png" alt="Crocodile" class="section__pic">
+                            <hr color="#E5EAEB">
                             <p class="section__letters">
                                 <strong class="section__font">Aligators</strong>
                             </p>
                             <p class="section__letter">Shenshuping Gengda Panda Center
                             </p>
-                            <img src="tv.png" alt="svg" class="section__svg">
+                            <img src="./assets/images/tv.png" alt="svg" class="section__svg">
                         </td>
                         <td class="section__string">
-                            <img src="Elephant.png" alt="Elephant" class="section__pic">
-                            <hr>
+                            <img src="./assets/images/Elephant.png" alt="Elephant" class="section__pic">
+                            <hr color="#E5EAEB">
                             <p class="section__letters">
                                 <strong class="section__font">Elephants</strong>
                             </p>
                             <p class="section__letter">Shenshuping Gengda Panda Center
                             </p>
-                            <img src="tv.png" alt="svg" class="section__svg">
+                            <img src="./assets/images/tv.png" alt="svg" class="section__svg">
                         </td>
                         <td class="section__string">
-                            <img src="Panda.png" alt="Panda" class="section__pic">
-                            <hr>
+                            <img src="./assets/images/Panda.png" alt="Panda" class="section__pic">
+                            <hr color="#E5EAEB">
                             <p class="section__letters">
                                 <strong class="section__font">Pandas</strong>
                             </p>
                             <p class="section__letter">Shenshuping Gengda Panda Center
                             </p>
-                            <img src="tv.png" alt="svg" class="section__svg">
+                            <img src="./assets/images/tv.png" alt="svg" class="section__svg">
                         </td>
                     </tr>
                 </table>
             </div>
         </section>
         <section class="section pay-and-feed">
-            <header class="section__header">
-                <div class="wrapper">
-                    <h1 class="section__title section__title_largee">Pay and feed</h1>
-                    <button class="section__clicks">Donate to volunteers</button>
-                </div>
-            </header>
             <div class="wrapper">
-                <img src="Okey.png" alt="Hand with coin" class="section__step">
-                <img src="Arrow1.png" alt="Arrow" class="section__step">
-                <img src="Monckey.png" alt="Monckey" class="section__step">
-                <img src="Arrow2.png" alt="Arrow" class="section__step">
-                <img src="Hand&apple.png" alt="Hand with apple" class="section__step">
+                <header class="section__header">
+                    <h1 class="section__title section__title_largee">PAY AND FEED</h1>
+                    <button class="section__clicks">DONATE TO VOLUNTEERS</button>
+                </header>
+                <div class="section__article-container">
+                    <article class="section__article">
+                    <img src="./assets/images/Okey.png" alt="Hand with coin" class="section__step">
+                    <p class="section__ptxtt">Keep an eye on your favourite animals online</p>
+                </article>
+                    <img src="./assets/images/Arrow1.png" alt="Arrow" class="section__step2">
+                    <article class="section__article">
+                    <img src="./assets/images/Monckey.png" alt="Monckey" class="section__step">
+                    <p class="section__ptxtt">Keep an eye on your favourite animals online</p>
+                </article>
+                    <img src="./assets/images/Arrow2.png" alt="Arrow" class="section__step2">
+                <article class="section__article">
+                    <img src="./assets/images/Hand&apple.png" alt="Hand with apple" class="section__step">
+                    <p class="section__ptxtt">Keep an eye on your favourite animals online</p>
+                </article>
+                </div>
             </div>
         </section>
         <section class="section testimonials">
-            <h1 class="section__title section__title_large">Testimonials</h1>
-            <button class="section__taps"> <img src="message.png" alt="heart" class="section__picture"> Leave
-                feedback</button>
-            <article class="section__border">
-                <p class="section__comment">
-                    20 December 2020<br>
-                    Awesome place to observe my favourite aligators at Florida, the quality of the video is great.
-                </p>
-                <img src="Comment1.png" alt="Avatar" class="section__compic">
-            </article>
-            <article class="section__border">
-                <p class="section__comment">
-                    20 December 2020<br>
-                    Awesome place to observe my favourite aligators at Florida, the quality of the video is great.
-                </p>
-                <img src="Comment2.png" alt="Avatar" class="section__compic">
-            </article>
-            <article class="section__border">
-                <p class="section__comment">
-                    20 December 2020<br>
-                    Awesome place to observe my favourite aligators at Florida, the quality of the video is great.
-                </p>
-                <img src="Comment3.png" alt="Avatar" class="section__compic">
-            </article>
+            <div class="wrapper">
+                <header class="section__header">
+                    <h1 class="section__title section__title_large">TESTIMONIALS</h1>
+                    <button class="section__taps"> <img src="./assets/images/message.png" alt="heart" class="section__picture"> 
+                        LEAVE FEEDBACK
+                    </button>
+                </header>
+                <div class="section__article-container">
+                    <article class="section__border">
+                        <p class="section__comment">
+                            <span class="section__data">
+                                20 December 2020</span><br>
+                            Awesome place to observe my favourite aligators at Florida, the quality of the video is
+                            great.
+                        </p>
+                        <div class="section__container">
+                            <img src="./assets/images/Comment1.png" alt="Avatar" class="section__compic">
+                            <p class="section__style">Adam, Spain</p>
+                        </div>
+                    </article>
+                    <article class="section__border">
+                        <p class="section__comment">
+                            <span class="section__data">
+                                20 December 2020</span><br>
+                            Awesome place to observe my favourite aligators at Florida, the quality of the video is
+                            great.
+                        </p>
+                        <div class="section__container">
+                            <img src="./assets/images/Comment2.png" alt="Avatar" class="section__compic">
+                            <p class="section__style">Chris, Australia</p>
+                        </div>
+                    </article>
+                    <article class="section__border">
+                        <p class="section__comment">
+                            <span class="section__data">
+                                20 December 2020</span><br>
+                            Awesome place to observe my favourite aligators at Florida, the quality of the video is
+                            great.
+                        </p>
+                        <div class="section__container">
+                            <img src="./assets/images/Comment3.png" alt="Avatar" class="section__compic">
+                            <p class="section__style">Amely, USA</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
         <section class="section beautiful-animals">
-            <h1 class="section__titletxt">Look at this beautiful animals</h1>
+            <h1 class="section__titletxt">LOOK AT THE BEAUTIFUL ANIMALS</h1>
             <div class="wrapper">
                 <ul class="section__list">
-                    <li class="section__scroll"><img src="Panda.png" alt="Panda" class="section__imagee">
-                        <p class="section__letters">Pandas</p>
+                    <li class="section__scroll"><img src="./assets/images/Panda.png" alt="Panda" class="section__imagee">
+                        <p class="section__letters">PANDAS</p>
                     </li>
-                    <li class="section__scroll"><img src="Gorilla.png" alt="Gorilla" class="section__imagee">
-                        <p class="section__letters">Gorillas</p>
+                    <li class="section__scroll"><img src="./assets/images/Gorilla.png" alt="Gorilla" class="section__imagee">
+                        <p class="section__letters">GORILLAS</p>
                     </li>
-                    <li class="section__scroll"><img src="Bird.png" alt="Bird" class="section__imagee">
-                        <p class="section__letters">Eagles</p>
+                    <li class="section__scroll"><img src="./assets/images/Bird.png" alt="Bird" class="section__imagee">
+                        <p class="section__letters">EAGLES</p>
                     </li>
-                    <li class="section__scroll"><img src="Crocodile.png" alt="Crocodile" class="section__imagee">
-                        <p class="section__letters">Aligators</p>
+                    <li class="section__scroll"><img src="./assets/images/Crocodile.png" alt="Crocodile" class="section__imagee">
+                        <p class="section__letters">ALIGATORS</p>
                     </li>
-                    <li class="section__scroll"><img src="Elephant.png" alt="Elephant" class="section__imagee">
-                        <p class="section__letters">Elephants</p>
+                    <li class="section__scroll"><img src="./assets/images/Elephant.png" alt="Elephant" class="section__imagee">
+                        <p class="section__letters">ELEPHANTS</p>
                     </li>
-                    <li class="section__scroll"><img src="Limurs.png" alt="Limurs" class="section__imagee">
-                        <p class="section__letters">Lemurs</p>
+                    <li class="section__scroll"><img src="./assets/images/Limurs.png" alt="Limurs" class="section__imagee">
+                        <p class="section__letters">LEMURS</p>
                     </li>
                 </ul>
+                <img src="arrows.png" alt="arrows">
             </div>
         </section>
     </main>
@@ -566,7 +250,7 @@
         <header class="header">
             <div class="wrapper">
                 <h1 class="header__title">Online zoo</h1>
-                <img src="Logo.png" alt="Logo of the online zoo" class="header__logo">
+                <img src="./assets/images/Logo.png" alt="Logo of the online zoo" class="header__logo">
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">ABOUT</li>
@@ -578,8 +262,8 @@
                 </nav>
                 <aside>
                     <div class="wrapper">
-                        <p class="header__letter">Design by Lemeshko Kateryna<br>
-                            ©RSSchool and ©Yem Digital 2021</p>
+                        <p class="header__letter">DESIGN BY LEMESHKO KATERYNA<br>
+                            ©RSSCHOOL AND ©YEM DIGITAL 2021</p>
                     </div>
                 </aside>
             </div>
