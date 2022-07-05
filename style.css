@@ -31,6 +31,7 @@ html {
     background-color: #F6F9FA;
 }
 
+
 .header__title {
     display: none;
 }
@@ -53,6 +54,10 @@ html {
 
 .menu__item {
     list-style: none;
+}
+
+.header__underline {
+    text-decoration: underline;
 }
 
 .header__svg {
@@ -277,7 +282,10 @@ html {
 }
 
 .section__slider {
-    
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    justify-content: right;  
 }
 
 .section.pay-and-feed {
