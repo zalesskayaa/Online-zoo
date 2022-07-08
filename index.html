@@ -17,11 +17,11 @@
             <img src="./assets/images/Logo.png" alt="Logo of the online zoo" class="header__logo">
             <nav class="header__menu menu">
                 <ul class="menu__list">
-                    <li class="menu__item"><text-decoration class="header__underline">ABOUT</text-decoration></li>
-                    <li class="menu__item">MAP</li>
-                    <li class="menu__item">ZOOS</li>
-                    <li class="menu__item">CONTACT US</li>
-                    <li class="menu__item">DESIGN</li>
+                    <li class="menu__item menu__item_active"><a>ABOUT</a></li>
+                    <li class="menu__item"><a>MAP</a></li>
+                    <li class="menu__item"><a>ZOOS</a></li>
+                    <li class="menu__item"><a>CONTACT US</a></li>
+                    <li class="menu__item"><a>DESIGN</a></li>
                 </ul>
             </nav>
             <aside>
@@ -78,74 +78,87 @@
                         <img src="./assets/images/heart.png" alt="heart" class="section__picture"> CHOOSE YOUR FAVORITE
                     </button>
                 </header>
-                <table class="section__table" cellspacing="20">
-                    <tr class="section__line">
-                        <td class="section__string">
-                            <img src="./assets/images/Panda.png" alt="Panda" class="section__pic">
-                            <hr color="#E5EAEB">
-                                <p class="section__letters">
-                                    <strong class="section__font">Pandas</strong><br>
-                                    <p class="section__letter">Shenshuping Gengda Panda Center
+                <div class="slider">
+                    <table class="section__table" cellspacing="20">
+                        <tr class="section__line">
+                            <td class="section__string">
+                                <img src="./assets/images/Panda.png" alt="Panda" class="section__pic">
+                                <hr color="#E5EAEB">
+                                <div class="section__cont">
+                                    <p class="section__letters">
+                                        <strong class="section__font">Pandas</strong><br>
+                                        <span class="section__letter">Shenshuping Gengda Panda Center</span>
                                     </p>
                                     <img src="./assets/images/tv.png" alt="svg" class="section__svg">
-                        </td>
-                        <td class="section__string">
-                            <img src="./assets/images/Bird.png" alt="Eagles" class="section__pic">
-                            <hr color="#E5EAEB">
-                            <p class="section__letters">
-                                <strong class="section__font">Eagles</strong>
-                            </p>
-                            <p class="section__letter">Shenshuping Gengda Panda Center
-                            </p>
-                            <img src="./assets/images/tv.png" alt="svg" class="section__svg">
-                        </td>
-                        <td class="section__string">
-                            <img src="./assets/images/Gorilla.png" alt="Gorillas" class="section__pic">
-                            <hr color="#E5EAEB">
-                            <p class="section__letters">
-                                <strong class="section__font">Gorillas</strong>
-                            </p>
-                            <p class="section__letter">Shenshuping Gengda Panda Center
-                            </p>
-                            <img src="./assets/images/tv.png" alt="svg" class="section__svg">
-                        </td>
-                    </tr>
-                    <tr class="section__line">
-                        <td class="section__string">
-                            <img src="./assets/images/Crocodile.png" alt="Crocodile" class="section__pic">
-                            <hr color="#E5EAEB">
-                            <p class="section__letters">
-                                <strong class="section__font">Aligators</strong>
-                            </p>
-                            <p class="section__letter">Shenshuping Gengda Panda Center
-                            </p>
-                            <img src="./assets/images/tv.png" alt="svg" class="section__svg">
-                        </td>
-                        <td class="section__string">
-                            <img src="./assets/images/Elephant.png" alt="Elephant" class="section__pic">
-                            <hr color="#E5EAEB">
-                            <p class="section__letters">
-                                <strong class="section__font">Elephants</strong>
-                            </p>
-                            <p class="section__letter">Shenshuping Gengda Panda Center
-                            </p>
-                            <img src="./assets/images/tv.png" alt="svg" class="section__svg">
-                        </td>
-                        <td class="section__string">
-                            <img src="./assets/images/Panda.png" alt="Panda" class="section__pic">
-                            <hr color="#E5EAEB">
-                            <p class="section__letters">
-                                <strong class="section__font">Pandas</strong>
-                            </p>
-                            <p class="section__letter">Shenshuping Gengda Panda Center
-                            </p>
-                            <img src="./assets/images/tv.png" alt="svg" class="section__svg">
-                        </td>
-                    </tr>
-                </table>
+                                </div>
+                            </td>
+                            <td class="section__string">
+                                <img src="./assets/images/Bird.png" alt="Eagles" class="section__pic">
+                                <hr color="#E5EAEB">
+                                <div class="section__cont">
+                                    <p class="section__letters">
+                                        <strong class="section__font">Eagles</strong><br>
+                                        <span class="section__letter">Shenshuping Gengda Panda Center</span>
+                                    </p>
+                                    <img src="./assets/images/tv.png" alt="svg" class="section__svg">
+                                </div>
+                            </td>
+                            <td class="section__string">
+                                <img src="./assets/images/Gorilla.png" alt="Gorillas" class="section__pic">
+                                <hr color="#E5EAEB">
+                                <div class="section__cont">
+                                    <p class="section__letters">
+                                        <strong class="section__font">Gorillas</strong><br>
+                                    <span class="section__letter">Shenshuping Gengda Panda Center
+                                    </span>
+                                    </p>
+                                    <img src="./assets/images/tv.png" alt="svg" class="section__svg">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="section__line">
+                            <td class="section__string">
+                                <img src="./assets/images/Crocodile.png" alt="Crocodile" class="section__pic">
+                                <hr color="#E5EAEB">
+                                <div class="section__cont">
+                                    <p class="section__letters">
+                                        <strong class="section__font">Aligators</strong><br>
+                                    <span class="section__letter">Shenshuping Gengda Panda Center
+                                    </span>
+                                    </p>
+                                    <img src="./assets/images/tv.png" alt="svg" class="section__svg">
+                                </div>
+                            </td>
+                            <td class="section__string">
+                                <img src="./assets/images/Elephant.png" alt="Elephant" class="section__pic">
+                                <hr color="#E5EAEB">
+                                <div class="section__cont">
+                                    <p class="section__letters">
+                                        <strong class="section__font">Elephants</strong><br>
+                                    <span class="section__letter">Shenshuping Gengda Panda Center
+                                    </span>
+                                    </p>
+                                    <img src="./assets/images/tv.png" alt="svg" class="section__svg">
+                                </div>
+                            </td>
+                            <td class="section__string">
+                                <img src="./assets/images/Panda.png" alt="Panda" class="section__pic">
+                                <hr color="#E5EAEB">
+                                <div class="section__cont">
+                                    <p class="section__letters">
+                                        <strong class="section__font">Pandas</strong><br>
+                                    <span class="section__letter">Shenshuping Gengda Panda Center
+                                    </span>
+                                    </p>
+                                    <img src="./assets/images/tv.png" alt="svg" class="section__svg">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <img src="./assets/images/arrows.png" alt="slider" class="section__slider">
+                </div>
             </div>
-            <div class="section__slider"><img src="./assets/images/arrows.png" alt="slider" class="section__slider"></div>
-            
+
         </section>
         <section class="section pay-and-feed">
             <div class="wrapper">

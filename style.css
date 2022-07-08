@@ -14,7 +14,6 @@ html {
     width: 100%;
     margin: 0px auto;
     display: flex;
-    padding: 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -29,6 +28,10 @@ html {
 .section.how-it-works,
 .section.pets-in-zoo {
     background-color: #F6F9FA;
+}
+
+.section.pets-in-zoo {
+    padding: 0px 0 80px 0;
 }
 
 
@@ -54,11 +57,14 @@ html {
 
 .menu__item {
     list-style: none;
+    cursor: pointer;
 }
 
-.header__underline {
-    text-decoration: underline;
+.menu__item_active,
+.menu__item:hover {
+    border-bottom: 1px solid white;
 }
+
 
 .header__svg {
     width: 32px;
@@ -66,9 +72,10 @@ html {
     margin-right: 30px;
 }
 
-.header__click {
-    border-color: #ffffff;
-    background-color: #216E7A;
+.header__click,
+.header__clicker {
+    border: 1px solid #ffffff;
+    background-color: #2A8086;
     color: #ffffff;
     border-radius: 30px;
     padding: 15px 30px;
@@ -81,22 +88,17 @@ html {
 }
 
 .header__clicker {
-    border-color: #216E7A;
-    background-color: #216E7A;
-    color: #ffffff;
-    border-radius: 30px;
-    padding: 15px 30px;
-    height: 45px;
-    width: 125px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 1em;
+    border: none;
+    background-color: #2A8086;
     margin-right: 30px;
 }
 
 .section__txt {
-    margin-left: 100px;
+    padding: 30px 0 0 100px;
+}
+
+.section.animals-online .wrapper {
+    align-items: unset;
 }
 
 .section__title {
@@ -112,13 +114,20 @@ html {
     font-weight: bolder;
 }
 .section.animals-online {
-    background-image: url(./assets/images/pattern.png);
     background-color: #F6F9FA;
-    width: 100%;
-    height: 700px;
-    background-size:cover ;
+    z-index: 1;
+    position: relative;
+}
+.section.animals-online::before {
+    position: absolute;
+    z-index: -1;
+    background-image: url(./assets/images/pattern.png);
     background-repeat: no-repeat;
-    background-clip: content-box;
+    background-size: cover;
+    width: 100%;
+    height: 603px;
+    content: '';
+    top: 0;
 }
 
 .animals-online .section__title {
@@ -137,8 +146,8 @@ html {
     color: #0D444D;
     padding: 7px 20px;
     border-radius: 30px;
-    width: 35%;
-    height: 40%;
+    width: 186px;
+    height: 40px;
     border-color: white;
     box-shadow: rgba(255, 255, 255, 0.292) 0px 8px 24px;
     font-weight: bolder;
@@ -154,15 +163,15 @@ html {
     color: #0D444D;
     font-size: 1.3em;
     font-weight: normal;
-    padding: 20px 0 50px;
     width: 100%;
-    margin-top: 40px;
-    }
+}
 
 .section__article-container {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    gap: 30px;
+    padding-top: 135px;
 }
 
 .section__article {
@@ -176,7 +185,6 @@ html {
 .section__ptxt {
     font-size: 0.8em;
     color: #0D444D;
-    padding-bottom: 100px;
 }
 
 .panda-img{
@@ -195,10 +203,11 @@ html {
 
 .section__header {
     display: flex;
-    padding: 100px;
+    padding: 20px 100px;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    padding-top: 125px;
 }
 
 .section__tap {
@@ -235,8 +244,7 @@ html {
 }
 
 .section__table {
-    background-color: #F6F9FA; 
-    margin-bottom: 200px;
+    background-color: #F6F9FA;
 }
 
 .section__line {
@@ -255,11 +263,18 @@ html {
     margin: 15px 125px 30px 125px ;
 }
 
+.section__cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
 .section__letters {
     size: 0.7em;
     color: #2D2D2D;
     font-weight: normal;
-    margin-top: 20px;
+    flex: 1;
 }
 
 .section__font {
@@ -270,33 +285,46 @@ html {
 .section__letter {
     color: rgb(161, 161, 161);
     font-size: 0.8em;
+    flex: 1;
 }
 
 .section__svg {
     width: 25px;
     height: 25px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 430px;
 }
 
-.section__slider {
+.slider {
     display: flex;
     padding: 0px;
     align-items: center;
-    justify-content: right;  
+    justify-content: space-between;
+
 }
 
+
 .section.pay-and-feed {
-    background-image: url(./assets/images/Illustration2.png);
     background-color: #F6F9FA;
-    width: 100%;
-    height: 600px;
-    background-size:cover ;
-    background-repeat: no-repeat;
-    background-clip: content-box;
+    z-index: 1;
+    position: relative;
 }
+.section.pay-and-feed::before {
+    position: absolute;
+    z-index: -1;
+    background-image: url(./assets/images/Illustration2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 603px;
+    content: '';
+    top: 0;
+}
+
+
+
+
+
+
 
 .section__title.section__title_largee {
     color: white;
@@ -304,10 +332,10 @@ html {
 }
 
 .section__clicks {
+    border: 1px solid #C5E1E5;
     color: #0D444D;
     box-sizing: border-box;
     background-color: #C5E1E5;
-    border-color: white;
     margin-inline: 5px;
     padding: 3px 15px;
     border-radius: 30px;
@@ -329,6 +357,7 @@ html {
 .section__step2 {
     width: 270px;
     height: 50px;
+    margin-top: 50px;
 }
 
 .section.testimonials {
@@ -337,7 +366,6 @@ html {
 
 
 .section__border {
-    padding: 30px;
     background-color: #F6F9FA;
     margin-bottom: 50px;
 }
@@ -401,7 +429,6 @@ html {
     display: flex;
     padding: 45px;
     justify-content: space-between;
-    margin-right: 200px;
 }
 
 .section__imagee {
@@ -414,7 +441,10 @@ html {
     background-color: #216E7A;
 }
 .header {
-    background-color: #216E7A;
+    background-color: #2A8086;
+    z-index: 2;
+    position: relative;
+    box-shadow:rgba(5, 80, 74, 0.345) 0px 8px 24px
 }
 
 .header__menu.menu {
