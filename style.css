@@ -7,7 +7,18 @@
 html {
     font-size: 14px;
     font-family: "Rubik", sans-serif;
+    height: 100%;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+main {
+    flex: 1;
+}
+
 
 .wrapper {
     max-width: 1600px;
@@ -16,6 +27,14 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.wrapper-column {
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0px auto;
 }
 
 .header {
@@ -78,6 +97,16 @@ html {
     font-size: 1em;
 }
 
+.section__content {
+    display: flex;
+    flex: 1;
+}
+
+.section-map__title {
+    color: #ffffff;
+    font-size: 1.0rem;
+}
+
 .header__clicker {
     border: none;
     background-color: #2A8086;
@@ -86,6 +115,7 @@ html {
 
 .section-map {
     background-color: #2A8086;
+    height: 100%;
 }
 
 .section__map {
@@ -152,9 +182,6 @@ html {
 }
 
 .section__background {
-    background-image: url(./assets/images/Map.png);
-    width: 100%;
-    height: 916.28px;
 }
 
 .header__letter {
