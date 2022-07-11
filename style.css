@@ -103,8 +103,11 @@ main {
 }
 
 .section-map__title {
-    color: #ffffff;
-    font-size: 1.0rem;
+    color: white;
+    font-size: 1.3em;
+    font-weight: normal;
+    width: 100%;
+    padding: 30px 0 60px 50px;
 }
 
 .header__clicker {
@@ -129,6 +132,9 @@ main {
     background-color: #C5E1E5;
     border-radius: 42px 60px 100px 40px;
     box-shadow: rgba(197, 255, 259, 1.0) 0px 8px 24px;
+    position: absolute;
+    top: 393px;
+    right: 328px;
 }
 
 .section__animal2 {
@@ -138,6 +144,9 @@ main {
     background-color: #C5E1E5;
     border-radius: 42px 60px 100px 40px;
     box-shadow: rgba(197, 255, 259, 1.0) 0px 8px 24px;
+    position: absolute;
+    bottom: 389px;
+    left: 722px;
 }
 
 .section__animal3 {
@@ -147,6 +156,9 @@ main {
     background-color: #C5E1E5;
     border-radius: 42px 60px 100px 40px;
     box-shadow: rgba(197, 255, 259, 1.0) 0px 8px 24px;
+    position: absolute;
+    top: 346px;
+    left: 144px;
 }
 
 .section__animal4 {
@@ -156,6 +168,9 @@ main {
     background-color: #C5E1E5;
     border-radius: 70px 90px 130px 70px;
     box-shadow: rgba(197, 255, 259, 1.0) 0px 8px 24px;
+    position: absolute;
+    top: 393px;
+    left: 333px;
 }
 
 .section__png {
@@ -172,6 +187,9 @@ main {
     display: flex;
     margin-right: 10px;
     align-items: center;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
 }
 
 .footer {
@@ -182,6 +200,7 @@ main {
 }
 
 .section__background {
+    position: relative;
 }
 
 .header__letter {
