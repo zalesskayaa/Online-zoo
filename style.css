@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -7,6 +7,7 @@
 html {
     font-size: 14px;
     font-family: "Rubik", sans-serif;
+    font-family: "Sahitya", sans-serif;
     height: 100%;
 }
 
@@ -15,8 +16,10 @@ body {
     flex-direction: column;
     height: 100%;
 }
+
 main {
     flex: 1;
+    background-color: white;
 }
 
 .wrapper {
@@ -27,10 +30,10 @@ main {
     align-items: center;
     justify-content: space-between;
 }
+
 .wrapper-column {
     flex-direction: column;
     height: 100%;
-    display: flex;
     max-width: 1600px;
     width: 100%;
     margin: 0px auto;
@@ -44,7 +47,6 @@ main {
     background-color: #2A8086;
     z-index: 2;
     position: relative;
-    box-shadow: rgba(18, 87, 91, 0.25) 0px 8px 24px;
     padding: 10px 20px;
 }
 
@@ -100,11 +102,46 @@ main {
     font-size: 1em;
 }
 
-.section__404 {
-    font-size: 15,625;
-    color: #0D444D;
-font-family: ;
+.header__clicker {
+    border: none;
+    background-color: #2A8086;
+    margin-right: 30px;
 }
+
+
+.section__404 {
+    font-family: "Sahitya";
+    font-size: 15.6em;
+    color: #0D444D;
+
+}
+
+.section__text {
+    font-size: 16px;
+    color: #0D444D;
+}
+
+.section__click {
+    border: 1px solid #19707D;
+    background-color: #19707D;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 30px;
+    width: 186px;
+    height: 40px;
+    border-color: white;
+    box-shadow: rgba(185, 213, 217, 0.6) 0px 2px 20px;
+}
+
+.section__image {
+    background-image: url(./assets/images/Donate-illustrations.png);
+    z-index: 1;
+    position: relative;
+    padding: 100px 0 150px 0;
+    height: 395px;
+    width: 100%;
+}
+
 
 
 
@@ -124,4 +161,3 @@ font-family: ;
     position: relative;
     padding: 50px 40px;
 }
-
