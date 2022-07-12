@@ -7,7 +7,6 @@
 html {
     font-size: 14px;
     font-family: "Rubik", sans-serif;
-    font-family: "Sahitya", sans-serif;
     height: 100%;
 }
 
@@ -20,6 +19,12 @@ body {
 main {
     flex: 1;
     background-color: white;
+}
+
+section {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .wrapper {
@@ -37,6 +42,19 @@ main {
     max-width: 1600px;
     width: 100%;
     margin: 0px auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 1280px;
+}
+
+.section__title {
+    font-size: 24px;
+    color: #0D444D;
+    font-family: "Rubik" sans-serif;
+    text-align: left;
 }
 
 .header__menu.menu {
@@ -68,6 +86,22 @@ main {
     gap: 20px;
     font-size: 1.0em;
     margin-left: 52px;
+}
+
+.section__tap {
+    border: 1px solid #19707D;
+    width: 42px;
+    height: 42px;
+    border-radius: 100px;
+    background-color: #ffffff;
+}
+
+.section__txt {
+    font-size: 18px;
+    color: #0D444D;
+    font-family: "Rubik" sans-serif;
+    text-align: left;
+    margin: 56px 0 10px 0;
 }
 
 .menu__item {
@@ -107,6 +141,88 @@ main {
     background-color: #2A8086;
     margin-right: 30px;
 }
+
+.section__menu {
+    flex-direction: column;
+}
+
+.section__article {
+    width: 90px;
+    height: 83px;
+    border: 1px solid #2A8086;
+    background-color: #2A8086;
+    border-radius: 42px 60px 100px 40px;
+    margin-bottom: 19px;
+    font-family: "Rubik" sans-serif;
+    font-weight: bolder;
+    color: #2D2D2D;
+}
+
+.section__articles {
+    font-size: 1.0em;
+    font-family: "Rubik" sans-serif;
+    font-weight: bolder;
+    color: #2D2D2D;
+}
+
+.section__img {
+    width: 76px;
+    height: 73px;
+}
+
+.section__article-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section__information {
+    padding: 100px 0;
+}
+
+.section__live {
+    width: 380px;
+    height: 240px;
+    margin-right: 32px;
+}
+
+.section__slider {
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
+    width: 70px;
+}
+
+.section__h1 {
+    font-size: 24px;
+    font-family: "Rubik" sans-serif;
+    color: #0D444D;
+    margin-bottom: 24px;
+}
+.section__text {
+    font-size: 16px;
+    font-family: "Rubik" sans-serif;
+    color: #0D444D;
+    margin-bottom: 30px;  
+}
+
+.section__link {
+    border-bottom: 1px solid #0D444D;
+    font-size: 16px;
+    font-family: "Rubik" sans-serif;
+    color: #0D444D;
+    margin-bottom: 30px;  
+}
+
+.section__facts {
+    list-style-image: url(./assets/images/ul.png);
+}
+
+.section___fact {
+    margin-bottom: 30px;
+}
+
+
 
 
 
