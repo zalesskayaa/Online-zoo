@@ -138,17 +138,18 @@ main {
 
 .section__image {
     background-image: url(./assets/images/Donate-illustrations.png);
-    z-index: 1;
-    position: relative;
     padding: 100px 0 150px 0;
-    height: 395px;
+    height: 403px;
     width: 100%;
+    background-repeat: no-repeat;
+
 }
 
 .header__letter {
     text-align: right;
     font-size: 0.8em;
     color: white;
+    background-size: cover;
 }
 
 .footer {
