@@ -108,6 +108,10 @@ main {
     margin-right: 30px;
 }
 
+.section__main {
+flex-direction: column;
+}
+
 
 .section__404 {
     font-family: "Sahitya";
