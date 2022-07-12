@@ -242,8 +242,7 @@ section {
     position: relative;
     padding: 100px 0 150px 0;
     height: 395px;
-    width: 1920px;
-    background-repeat: no-repeat;
+    width: 100%;
 }
 
 .header__letter {
