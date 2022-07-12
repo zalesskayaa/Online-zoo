@@ -211,6 +211,7 @@ main {
 
 .section__ptxtt {
     color: white;
+    text-align: center;
 }
 
 .section__header {
