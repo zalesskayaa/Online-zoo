@@ -9,6 +9,10 @@ html {
     font-family: "Rubik" ,sans-serif;
 }
 
+main {
+    background-color: #F6F9FA;
+}
+
 .wrapper {
     max-width: 1600px;
     width: 100%;
@@ -16,6 +20,11 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.column-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .section.how-it-works .wrapper,
@@ -31,7 +40,7 @@ html {
 }
 
 .section.pets-in-zoo {
-    padding: 0px 0 80px 0;
+    margin: 125px 0 125px 0;
 }
 
 
@@ -94,7 +103,7 @@ html {
 }
 
 .section__txt {
-    padding: 30px 0 0 100px;
+    margin: 30px 0 0 100px;
 }
 
 .section.animals-online .wrapper {
@@ -125,13 +134,13 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 603px;
+    height: 744px;
     content: '';
     top: 0;
 }
 
 .animals-online .section__title {
-    margin-bottom: 27px;
+    margin: 80px 0 27px 0;
 }
 
 .section__textxt {
@@ -142,7 +151,7 @@ html {
 }
 
 .section__click {
-    background-color: white;
+    border: 1px solid #C5E1E5;
     color: #0D444D;
     padding: 7px 20px;
     border-radius: 30px;
@@ -154,9 +163,9 @@ html {
 }
 
 .section__img {
-    width: 500px;
-    height: auto ;
-    margin: 50px 100px 0 0;
+    width: 803.93px;
+    height: 666px ;
+    margin: 20px 100px 0 0;
 }
 
 .section__title.section__title_large {
@@ -171,10 +180,13 @@ html {
     width: 100%;
     justify-content: space-around;
     gap: 30px;
-    padding-top: 135px;
+    padding-top: 130px;
 }
 
 .section__article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section__image {
@@ -199,15 +211,16 @@ html {
 
 .section__ptxtt {
     color: white;
+    text-align: center;
 }
 
 .section__header {
     display: flex;
-    padding: 20px 100px;
+    padding: 0 20px;
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding-top: 125px;
+    padding: 20px 0;
 }
 
 .section__tap {
@@ -230,12 +243,12 @@ html {
     color: #0D444D;
     border-radius: 30px;
     padding: 15px 30px;
-    height: 45px;
-    width: 310px;
+    height: 52px;
+    width: 255px;
     display: flex;
     align-items: center;
     gap: 25px;
-    font-size: 1.0em;
+    font-size: 0.9em;
 }
 
 .section__picture {
@@ -245,22 +258,43 @@ html {
 
 .section__table {
     background-color: #F6F9FA;
+    width: 100%;
 }
 
 .section__line {
-    margin-: 0px;
+    margin: 0px;
 }
 
 .section__string {
+    width: 480px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
 }
 
+.section__arrow {
+    background-color: #C5E1E5;
+    max-width: 266px;
+    width: 100%;
+    height: 1px;
+    transform: translate(10px, 0px);
+}
+
+.section__arrows {
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+
 .section__pic {
+    margin: 0 auto;
+    display: block;
     width: 228px;
     height: 221px;
-    margin: 15px 125px 30px 125px ;
+}
+
+.section__lines {
+    margin-top: 10px;
 }
 
 .section__cont{
@@ -307,6 +341,7 @@ html {
     background-color: #F6F9FA;
     z-index: 1;
     position: relative;
+    padding: 100px 0 150px 0;
 }
 .section.pay-and-feed::before {
     position: absolute;
@@ -320,11 +355,10 @@ html {
     top: 0;
 }
 
-
-
-
-
-
+.section__slider {
+  flex-direction: column;
+  width: 10px;
+}
 
 .section__title.section__title_largee {
     color: white;
@@ -355,9 +389,8 @@ html {
 }
 
 .section__step2 {
-    width: 270px;
-    height: 50px;
-    margin-top: 50px;
+    width: 52px;
+    height: 52px;
 }
 
 .section.testimonials {
@@ -371,14 +404,14 @@ html {
 }
 
 .section__comment {
-    padding: 28px 75px 80px 40px;
+    padding: 20px 60px 80px 40px;
     background-color: #F6F9FA;
     filter: drop-shadow(rgba(100, 100, 111, 0.386) 0px 7px 29px);
-    margin-bottom: 15px;
     position: relative;
     font-size: 0.9em;
     font-style: italic;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .section__comment::after {
@@ -413,6 +446,7 @@ html {
 
 .section.beautiful-animals {
     background-color: #F6F9FA;
+    padding: 100px 0;
 }
 
 .section__titletxt {
@@ -421,7 +455,7 @@ html {
     font-weight: normal;
     width: 100%;
     display: flex;
-    margin-left: 320px;
+    margin-left: 140px;
 }
 
 .section__list {
@@ -429,22 +463,27 @@ html {
     display: flex;
     padding: 45px;
     justify-content: space-between;
+    width: 1100px;
 }
 
 .section__imagee {
     width: 76px;
-    height: 73px;
-    margin-right: 150px;
+    height: 73.37px;
 }
 
 .footer {
-    background-color: #216E7A;
-}
+        background-color: #196469;
+        z-index: 2;
+        position: relative;
+        padding: 50px 40px;
+    }
+
 .header {
     background-color: #2A8086;
     z-index: 2;
     position: relative;
-    box-shadow:rgba(5, 80, 74, 0.345) 0px 8px 24px
+    box-shadow:rgba(18, 87, 91, 0.25) 0px 8px 24px;
+    padding: 10px 20px;
 }
 
 .header__menu.menu {
@@ -455,4 +494,7 @@ html {
     text-align: right;
     font-size: 0.8em;
     color: white;
+}
+
+.section__lines {
 }
