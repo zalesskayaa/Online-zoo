@@ -44,6 +44,10 @@ section {
     margin: 0px auto;
 }
 
+.section__information .wrapper {
+    align-items: baseline;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
