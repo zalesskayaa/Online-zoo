@@ -357,7 +357,7 @@ main {
 
 .section__slider {
   flex-direction: column;
-  width: 10px;
+  display: flex;
 }
 
 .section__title.section__title_largee {
