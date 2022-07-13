@@ -235,6 +235,26 @@ section {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.click {
+    border: 1px solid #C5E1E5;
+    color: #0D444D;
+    box-sizing: border-box;
+    background-color: #C5E1E5;
+    margin-inline: 5px;
+    padding: 3px 15px;
+    border-radius: 30px;
+    padding: 15px 30px;
+    height: 45px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.0em;
+    box-shadow: rgba(255, 255, 255, 0.292) 0px 8px 24px;
+    position: absolute;
 }
 
 .header__letter {
