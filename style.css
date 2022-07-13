@@ -222,20 +222,6 @@ section {
     margin-bottom: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .section__image {
     background-image: url(./assets/images/Donate-illustrations.png);
     z-index: 1;
@@ -243,6 +229,8 @@ section {
     padding: 100px 0 150px 0;
     height: 395px;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header__letter {
