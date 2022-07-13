@@ -130,10 +130,11 @@ main {
     color: white;
     padding: 7px 20px;
     border-radius: 30px;
-    width: 186px;
-    height: 40px;
+    width: 247px;
+    height: 52px;
     border-color: white;
     box-shadow: rgba(185, 213, 217, 0.6) 0px 2px 20px;
+    margin-top: 36px;
 }
 
 .section__image {
