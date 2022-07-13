@@ -226,16 +226,22 @@ section {
     margin-bottom: 30px;
 }
 
-.section__image {
-    background-image: url(./assets/images/Donate-illustrations.png);
+.image {
     z-index: 1;
     position: relative;
     padding: 100px 0 150px 0;
-    height: 395px;
-    width: 100%;
+}
+
+.image::before {
+    background-image: url(./assets/images/Donate-illustrations.png);
+    position: absolute;
+    z-index: 1;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    width: 100%;
+    height: 603px;
+    content: '';
+    top: 0;
 }
 
 .click {
@@ -249,7 +255,6 @@ section {
     padding: 15px 30px;
     height: 45px;
     width: 260px;
-    display: flex;
     align-items: center;
     gap: 10px;
     font-size: 1.0em;
