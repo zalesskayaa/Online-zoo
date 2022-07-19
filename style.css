@@ -533,6 +533,17 @@ main {
     color: white;
 }
 
+.menu__lists {
+    margin-left: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    justify-content: left;
+    gap: 20px;
+    font-size: 1.0em;
+}
+
 .section__lines {}
 
 body {
@@ -541,8 +552,6 @@ body {
 
 
 @media (max-width: 1200px) {
-    body {}
-
     .section__title {
         font-size: 4rem;
     }
@@ -579,11 +588,16 @@ body {
     .section.pay-and-feed::before {}
 
     .section__ptxtt {
-        color: #0D444D;
+        color: white;
     }
 
     .section__title.section__title_largee {
-        color: #0D444D;
+        color: white;
+    }
+
+    .section__header {
+        justify-content: space-around;
+        padding: 0 0;
     }
 }
 
@@ -669,6 +683,14 @@ body {
     .header__menu.menu2 {
         flex: 1;
         height: 120px;
+        margin-left: 50px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        justify-content: left;
+        gap: 20px;
+        font-size: 1.0em;
     }
 
     .menu__item {
@@ -683,6 +705,11 @@ body {
         font-size: 1.5rem
     }
 
+    .menu__itemm {
+        list-style: none;
+        font-size: 0.9rem
+    }
+
     .section__taps {
         font-size: 0.8rem;
         height: 42px;
@@ -694,9 +721,18 @@ body {
 }
 
 @media (max-width: 640px) {
-    body {}
 
-    .menu__list {}
+.section__title{
+    font-size: 2.2rem;
+}
+
+.section__bold {
+    font-size: 1.9rem;
+}
+
+.section__click {
+    
+}
 
 }
 
