@@ -22,9 +22,15 @@ main {
 }
 
 section {
-    padding-top: 70px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-around;
+}
+
+.section__screen {
+    width: 1280px;
+    height: 34vw;
+    max-height: 650px;
 }
 
 .wrapper {
@@ -106,7 +112,7 @@ section {
     color: #0D444D;
     font-family: "Rubik" sans-serif;
     text-align: left;
-    margin: 56px 0 10px 0;
+    margin: 10px 0;
 }
 
 .menu__item {
@@ -203,11 +209,12 @@ section {
     color: #0D444D;
     margin-bottom: 24px;
 }
+
 .section__text {
     font-size: 16px;
     font-family: "Rubik" sans-serif;
     color: #0D444D;
-    margin-bottom: 30px;  
+    margin-bottom: 30px;
 }
 
 .section__link {
@@ -215,7 +222,7 @@ section {
     font-size: 16px;
     font-family: "Rubik" sans-serif;
     color: #0D444D;
-    margin-bottom: 30px;  
+    margin-bottom: 30px;
 }
 
 .section__facts {
@@ -270,21 +277,47 @@ section {
 }
 
 @media (max-width: 1200px) {
-   
+    .section__animals {
+        padding-left: 100px;
+    }
+
+    .section__title {
+        font-size: 1.3rem;
+    }
+
+    .section__screen {
+        width: 80%
+    }
+
+    .section__live {
+        width: 300px;
+        height: 200px;
+        margin-right: 32px;
+    }
+
+    .section__h1 {
+        font-size: 1.2rem;
+    }
+
+    .section__text {
+        font-size: 1.0rem;
+    }
+
+    .section__link {
+        font-size: 1.0rem;
+    }
+
+    .image {
+        height: 24vw;
+        max-height: 280px;
+    }
+
 }
 
-@media (max-width: 992px) {
-   
-}
+@media (max-width: 992px) {}
 
-@media (max-width: 768px) {
-    
-}
+@media (max-width: 768px) {}
 
-@media (max-width: 480px) {
-    
-}
+@media (max-width: 480px) {}
 
-@media (max-width: 320px) {
-    
-}
+@media (max-width: 320px) {}
