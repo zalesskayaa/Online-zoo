@@ -628,6 +628,10 @@ body {
         font-size: 0.7rem;
     }
 
+    .section__btns {
+        display: flex;
+    }
+
     .section__list {
         width: 875px;
     }
@@ -729,7 +733,73 @@ body {
         font-size: 1.9rem;
     }
 
-    .section__click {}
+    .section.animals-online::before {
+        height: 60vw;
+    }
+
+    .section__click {
+        width: 158px;
+        height: 38px;
+    }
+
+    .section__click2 {
+        width: 158px;
+        height: 38px;
+    }
+
+    .section__img {
+        width: 43vw;
+    }
+
+    .section__pic {
+        width: 101px;
+        height: 97px;
+        margin: 0 15px;
+    }
+
+    .section__font {
+        font-size: 0.9rem;
+    }
+
+    .section__letter {
+        font-size: 0.7em;
+    }
+
+    .section__svg {
+        width: 20px;
+        height: 20px;
+    }
+    .section__tap {
+        font-size: 0.7rem;
+    }
+
+    .section__list {
+        width: 610px;
+    }
+
+    .section__imagee {
+        width: 65px;
+        height: 60px;
+    }
+
+    .section__letters {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .menu__itemm {
+        font-size: 0,6rem;
+    }
+
+    .menu__lists {
+        font-size: 0,8rem;
+        margin-left: 0px;
+    }
+
+    .section__comment {
+        padding: 12px 5px 29px 17px;
+        font-size: 0.6rem;
+    }
 
 }
 
