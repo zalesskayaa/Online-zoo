@@ -33,8 +33,8 @@
             </aside>
         </div>
     </header>
-    <main>
-        <section>
+    <div class="wrapper">
+        <main class="section">
             <div class="section__animals">
                 <article class="section__article">
                     <img src="./assets/images/Panda2.png" alt="panda">
@@ -54,8 +54,8 @@
                 </article>
             </div>
             <div class="section__video">
-                <div class="wrapper">
-                    <p class="section__title">THE GIANT PANDAS</p>
+                <header class="section__header">
+                    <h1 class="section__title">THE GIANT PANDAS</h1>
                     <div class="section__buttons">
                         <button class="section__tap">
                             <img src="./assets/images/i.png" alt="heart" class="section__picture">
@@ -64,24 +64,30 @@
                             <img src="./assets/images/heart.png" alt="heart" class="section__picture">
                         </button>
                     </div>
-                </div>
-                <div class="section__videos">
+                </header>
+                <div class="section__cameras">
                     <p class="section__txt">Main cameras</p>
-                    <iframe width="560" class="section__screen" height="315" src="https://www.youtube.com/embed/hAOoMtRstJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <p class="section__txt">Side cameras</p>
-                <div class="container">
-                    <div class="section__article-container">
-                        <img src="./assets/images/live.png" alt="live video" class="section__live">
-                        <img src="./assets/images/live.png" alt="live video" class="section__live">
-                        <img src="./assets/images/live.png" alt="live video" class="section__live">
+                    <iframe class="section__screen" src="https://www.youtube.com/embed/hAOoMtRstJ8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <p class="section__txt">Side cameras</p>
+                    <div class="container">
+                        <div class="block">
+                            <div class="section__article-container">
+                                <img src="./assets/images/live.png" alt="live video" class="section__live">
+                                <img src="./assets/images/live.png" alt="live video" class="section__live">
+                                <img src="./assets/images/live.png" alt="live video" class="section__live">
+                            </div>
+                        </div>
+                        <div class="section__slider">
+                            <img src="./assets/images/arrows.png" alt="slider">
+                            <img src="./assets/images/arrows2.png" alt="slider">
+                        </div>
                     </div>
-                    <div class="section__slider">
-                        <img src="./assets/images/arrows.png" alt="slider">
-                        <img src="./assets/images/arrows2.png" alt="slider">
-                    </div>
                 </div>
-                <div class="wrapper">
+                <div class="section__two-columns">
                     <article class="section__information">
                         <p class="section__h1">INFORMATION</p>
                         <p class="section__text">Zoo <br>
@@ -124,11 +130,14 @@
                         </ul>
                     </article>
                 </div>
-        </section>
+            </div>
+        </main>
+    </div>
+    <div class="wrapper">
         <div class="image">
             <button class="click">DONATE TO VOLUNTEERS</button>
         </div>
-    </main>
+    </div>
     <footer class="footer">
         <div class="wrapper">
             <h1 class="header__title">Online zoo</h1>

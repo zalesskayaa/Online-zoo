@@ -11,26 +11,29 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+
 }
 
-main {
+.section {
     flex: 1;
     background-color: white;
-}
-
-section {
     padding-top: 30px;
     display: flex;
     justify-content: space-around;
 }
 
+.section__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .section__screen {
-    width: 1280px;
     height: 34vw;
     max-height: 650px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 80vw;
 }
 
 .wrapper {
@@ -56,8 +59,8 @@ section {
 
 .container {
     display: flex;
-    justify-content: space-around;
-    width: 1280px;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
 }
 
@@ -66,6 +69,7 @@ section {
     color: #0D444D;
     font-family: "Rubik" sans-serif;
     text-align: left;
+    font-weight: normal;
 }
 
 .header__menu.menu {
@@ -99,12 +103,20 @@ section {
     margin-left: 52px;
 }
 
+.section__buttons {
+    display: flex;
+    gap: 10px;
+}
+
 .section__tap {
     border: 1px solid #19707D;
     width: 42px;
     height: 42px;
-    border-radius: 100px;
+    border-radius: 50%;
     background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section__txt {
@@ -185,22 +197,23 @@ section {
 
 .section__article-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 30px;
 }
 
-.section__information {
-    padding: 100px 0;
+.section__cameras {
+    display: flex;
+    flex-direction: column;
 }
 
 .section__live {
     width: 380px;
     height: 240px;
-    margin-right: 32px;
 }
 
 .section__slider {
     flex-direction: column;
-    width: 10px;
+    display: flex;
 }
 
 .section__h1 {
@@ -233,6 +246,7 @@ section {
     margin-bottom: 30px;
 }
 
+
 .image {
     background-image: url(./assets/images/Donate-illustrations.png);
     height: 385px;
@@ -243,20 +257,22 @@ section {
     position: relative;
 }
 
+.section__two-columns {
+    justify-content: space-between;
+    display: flex;
+    margin: 100px 0;
+}
+
 .click {
     border: 1px solid #C5E1E5;
     color: #0D444D;
-    box-sizing: border-box;
     background-color: #C5E1E5;
-    margin-inline: 5px;
-    padding: 3px 15px;
     border-radius: 30px;
     padding: 15px 30px;
     height: 45px;
     width: 260px;
     align-items: center;
-    gap: 10px;
-    font-size: 1.0em;
+    font-size: 1.0rem;
     box-shadow: rgba(255, 255, 255, 0.292) 0px 8px 24px;
     position: absolute;
     right: 695px;
@@ -276,9 +292,12 @@ section {
     padding: 50px 40px;
 }
 
+.section__animals {
+    padding: 0 70px 0 20px;
+}
+
 @media (max-width: 1200px) {
     .section__animals {
-        padding-left: 100px;
     }
 
     .section__title {
