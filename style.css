@@ -830,7 +830,7 @@ body {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 428px) {
     .section__article-container {
         display: block;
         flex-direction: column;
