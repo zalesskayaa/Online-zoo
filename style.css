@@ -60,6 +60,10 @@ main {
     height: 60px;
 }
 
+.link {
+    color: #ffffff;
+}
+
 .menu__list {
     margin-left: 50px;
     color: white;
