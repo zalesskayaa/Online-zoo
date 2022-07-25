@@ -42,6 +42,16 @@ main {
 .header__menu.menu {
     flex: 1;
 }
+.menu__item_active,
+.menu__item:hover {
+    list-style: none;
+    border-bottom: 1px solid white;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+}
 
 .header {
     background-color: #2A8086;

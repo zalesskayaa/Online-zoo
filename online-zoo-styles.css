@@ -10,9 +10,7 @@ html {
     height: 100%;
 }
 
-body {
-
-}
+body {}
 
 .section {
     flex: 1;
@@ -62,6 +60,19 @@ body {
     justify-content: space-between;
     width: 100%;
     align-items: center;
+}
+
+.section__lives {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    height: 250px;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
 }
 
 .section__title {
@@ -257,6 +268,21 @@ body {
     position: relative;
 }
 
+.menu__item_active,
+.menu__item:hover {
+    list-style: none;
+    border-bottom: 1px solid white;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header__burger {
+    display: none;
+}
+
 .section__two-columns {
     justify-content: space-between;
     display: flex;
@@ -297,8 +323,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-    .section__animals {
-    }
+    .section__animals {}
 
     .section__title {
         font-size: 1.3rem;
@@ -308,11 +333,7 @@ body {
         width: 80%
     }
 
-    .section__live {
-        width: 300px;
-        height: 200px;
-        margin-right: 32px;
-    }
+    .section__live {}
 
     .section__h1 {
         font-size: 1.2rem;
@@ -331,12 +352,120 @@ body {
         max-height: 280px;
     }
 
+    .click {
+        right: 360px;
+    }
+
 }
 
 @media (max-width: 992px) {}
 
-@media (max-width: 768px) {}
+@media (max-width: 640px) {
+    .section__article {
+        width: 80px;
+        height: 70px;
+    }
 
-@media (max-width: 480px) {}
+    .section__animal,
+    .section__img {
+        height: 65px;
+        width: 68px;
+    }
 
-@media (max-width: 320px) {}
+    .section__tap {
+        width: 35px;
+        height: 35px;
+    }
+
+    .header__clicker,
+    .header__click,
+    .header__svg {
+        display: none;
+    }
+
+    .menu__list {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+        background-color: #2A8086;
+        border: none;
+    }
+
+    .section__two-columns {
+        flex-direction: column;
+    }
+
+    .image {
+        height: 49vw;
+        max-height: 310px;
+    }
+
+    .click {
+        right: 185px;
+        height: 40px;
+        width: 238px;
+        font-size: 0.8rem;
+    }
+
+    .header__letter {
+        font-size: 0.65rem;
+    }
+
+    .menu__list {
+        font-size: 0.7rem;
+        margin-left: 10px;
+    }
+
+    .header__logo {
+        width: 65px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 428px) {
+
+    .section__tap {
+        width: 30px;
+        height: 30px;
+    }
+
+    .click {
+        right: 90px;
+        height: 40px;
+        width: 204px;
+        font-size: 0.78rem;
+    }
+
+    .section__text {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .section__link {
+        font-size: 0.8rem;
+    }
+
+    .section__two-columns {
+        margin: 30px 0 0 45px;
+        font-size: 0.8rem;
+    }
+
+    .section___fact {
+        margin-bottom: 10px;
+    }
+
+    .section__animals {
+        display: none;
+    }
+
+    .section__screen {
+        height: 68vw;
+        max-height: 280px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 80vw;
+        margin-left: 35px;
+    }
+}
