@@ -10,7 +10,6 @@ html {
     height: 100%;
 }
 
-body {}
 
 .section {
     flex: 1;
@@ -323,7 +322,6 @@ body {}
 }
 
 @media (max-width: 1200px) {
-    .section__animals {}
 
     .section__title {
         font-size: 1.3rem;
@@ -333,7 +331,6 @@ body {}
         width: 80%
     }
 
-    .section__live {}
 
     .section__h1 {
         font-size: 1.2rem;

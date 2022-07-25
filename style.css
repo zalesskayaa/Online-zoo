@@ -570,7 +570,6 @@ height: 750px;
     margin-left: 50px;
 }
 
-.section__lines {}
 
 body {
     background-color: aliceblue;
@@ -590,14 +589,11 @@ body {
         font-size: 16px;
     }
 
-    .panda-img {}
 
     .section__pic {
         width: 162px;
         height: 157px;
     }
-
-    .section.pay-and-feed {}
 
     .section__arrow {
         width: 35%;
@@ -606,10 +602,6 @@ body {
     .section__ptxtt {
         font-size: 14px;
     }
-
-    .section__article-container {}
-
-    .section.pay-and-feed::before {}
 
     .section__ptxtt {
         color: white;
