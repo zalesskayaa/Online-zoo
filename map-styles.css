@@ -161,6 +161,27 @@ main {
     width: 100%;
 }
 
+.section__animal:hover {
+    width: 95px;
+    height: 88px;
+    cursor: pointer;
+}
+.section__animal2:hover {
+    width: 95px;
+    height: 88px;
+    cursor: pointer;
+}
+.section__animal3:hover {
+    width: 95px;
+    height: 88px;
+    cursor: pointer;
+}
+.section__animal4:hover {
+    width: 95px;
+    height: 88px;
+    cursor: pointer;
+}
+
 .section__animal {
     width: 90px;
     height: 83px;
