@@ -94,6 +94,10 @@ main {
     width: 520px;
     cursor: pointer;
 }
+.menu__itemm:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
 
 .section__clicks:hover {
     width: 265px;
