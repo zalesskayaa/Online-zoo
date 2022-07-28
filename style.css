@@ -60,6 +60,11 @@ main {
     height: 60px;
 }
 
+.link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .menu__list {
     margin-left: 50px;
     color: white;
@@ -80,10 +85,47 @@ main {
     list-style: none;
     cursor: pointer;
 }
+.section__click:hover {
+    width: 190px;
+    height: 44px;
+    cursor: pointer;
+}
+.section__string:hover {
+    width: 520px;
+    cursor: pointer;
+}
+.menu__itemm:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.section__clicks:hover {
+    width: 265px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.section__imagee:hover {
+    cursor: pointer;
+    width: 85px;
+    height: 82px;
+}
+
+.section__pic:hover {
+    cursor: pointer;
+    width: 240px;
+    height: 235px;
+}
 
 .menu__item_active,
 .menu__item:hover {
+    list-style: none;
     border-bottom: 1px solid white;
+}
+
+.header__click, 
+.header__clicker:hover {
+    cursor: pointer;  
 }
 
 .menu__item2:hover {
@@ -150,8 +192,8 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    max-height: 744px;
-    height: 47vw;
+    max-height: 770px;
+    height: 59vw;
     content: '';
     top: 0;
 }
@@ -227,7 +269,7 @@ main {
     background-image: url(./assets/images/Illustration.png);
     background-color: #F6F9FA;
     width: 100%;
-    height: 400px;
+    height: 495px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -561,9 +603,9 @@ height: 750px;
     justify-content: left;
     gap: 20px;
     font-size: 1.0em;
+    margin-left: 50px;
 }
 
-.section__lines {}
 
 body {
     background-color: aliceblue;
@@ -583,14 +625,11 @@ body {
         font-size: 16px;
     }
 
-    .panda-img {}
 
     .section__pic {
         width: 162px;
         height: 157px;
     }
-
-    .section.pay-and-feed {}
 
     .section__arrow {
         width: 35%;
@@ -599,10 +638,6 @@ body {
     .section__ptxtt {
         font-size: 14px;
     }
-
-    .section__article-container {}
-
-    .section.pay-and-feed::before {}
 
     .section__ptxtt {
         color: white;
@@ -831,6 +866,41 @@ body {
 }
 
 @media (max-width: 428px) {
+
+    .section__btns {
+        position: absolute;
+        top: 344px;
+    }
+    
+    .section.animals-online::before {
+        max-height: 531px;
+        height: 136vw;
+    }
+    .section__img {
+        position: absolute;
+        right: 91px;
+        top: 15px;
+        width: 54vw;
+    }
+
+    .section__textxt {
+        font-size: 0.8rem;
+        position: absolute;
+        top: 260px;
+    }
+
+    .section__title {
+        font-size: 1.8rem;
+    }
+
+    .section__bold {
+        font-size: 1.5rem;
+    }
+    .animals-online .section__title {
+        position: absolute;
+        top: 194px;
+    }
+
     .section__article-container {
         display: block;
         flex-direction: column;
@@ -876,5 +946,9 @@ body {
     .section__arrows {
         width: 100%;
         justify-content: center;
+    }
+
+    .section.how-it-works {
+        padding-top: 400px;
     }
 }
